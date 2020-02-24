@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InsiderGame.Setting">
+
+    <StackLayout BackgroundColor="#EE0000">
+        <Label Text="何人で遊びますか？"
+               TextColor="White"
+               VerticalOptions="CenterAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+        <Label Text="How many players?"
+               TextColor="White"
+               VerticalOptions="StartAndExpand" 
+               HorizontalOptions="CenterAndExpand" />
+
+        <Button Text="4"
+                BackgroundColor="White"
+                HeightRequest="40"
+                Margin="50,10"
+                Clicked="Button_Clicked"/>
+        <Button Text="5"
+                BackgroundColor="White"
+                HeightRequest="40"
+                Margin="50,10"
+                Clicked="Button_Clicked"/>
+        <Button Text="6"
+                BackgroundColor="White"
+                HeightRequest="40"
+                Margin="50,10"
+                Clicked="Button_Clicked"/>
+        <Button Text="7"
+                BackgroundColor="White"
+                HeightRequest="40"
+                Margin="50,10"
+                Clicked="Button_Clicked"/>
+        <Button Text="8"
+                BackgroundColor="White"
+                HeightRequest="40"
+                Margin="50,10,50,20"
+                Clicked="Button_Clicked"/>
+
+    </StackLayout>
+</ContentPage>

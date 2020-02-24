@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InsiderGame.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem />
+        <!--ツールバーアイテムをタッチしたときのイベント。同名メソッドに飛ぶ-->
+    </ContentPage.ToolbarItems>
+
+    <StackLayout BackgroundColor="#EE0000">
+        <Image Source="C:\Users\nauno\source\repos\InsiderGame\InsiderGame\InsiderGame\Assets\union.png"
+               HeightRequest="200"
+               Margin="0,120,0,0"/>
+        
+        <!-- Place new controls here -->
+        <Label Text="INSIDER"               
+               FontSize="40"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="EndAndExpand" />
+
+        <Button Text="Play"
+                BackgroundColor="White"
+                Margin="10, 40"
+                Clicked="Button_Clicked" />
+        
+    </StackLayout>
+
+</ContentPage>

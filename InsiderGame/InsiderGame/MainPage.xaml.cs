@@ -16,6 +16,10 @@ namespace InsiderGame
         public MainPage()
         {
             InitializeComponent();
+
+            InsiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.ColoredInsiderImage.png");
+
+
         }
 
         private void Button_Clicked(object sender, EventArgs e)

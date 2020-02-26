@@ -12,9 +12,24 @@ namespace InsiderGame
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Setting : ContentPage
     {
+        const string MASTER = "Master";
+        const string INSIDER = "Insider";
+        const string COMMON = "Common";
+
         public Setting()
         {
             InitializeComponent();
+
+            Button orangeButton = new Button
+            {
+                Text = "2"
+            };
+
+            orangeButton.Clicked += Button_Clicked;
+
+            FlexLayout flexLayout = new FlexLayout();
+            flexLayout.Children.Add(orangeButton);
+            Content = flexLayout;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -22,9 +37,11 @@ namespace InsiderGame
             Button button = (Button)sender;
             int pressed = Convert.ToInt16(button.Text);
 
-            var players = CreatePlayers(pressed);
-            var setRolePlayers = SetRole(players);
+            var commonPlayers = CreatePlayers(pressed);
+            var setRolePlayers = SetRole(commonPlayers);
 
+            //Navigation.PushAsync(new SetWord(setRolePlayers));
+            Application.Current.MainPage = new SetWord(setRolePlayers);
         }
 
         /// <summary>
@@ -32,9 +49,24 @@ namespace InsiderGame
         /// </summary>
         /// <param name="players"></param>
         /// <returns></returns>
-        private List<Player> SetRole(List<Player> players)
+        internal List<Player> SetRole(List<Player> players)
         {
-            throw new NotImplementedException();
+            var random = new Random();
+
+            // プレイヤー人数の中からランダムで役職を決定
+            var insider = random.Next(0, players.Count);
+            var master = random.Next(0, players.Count);
+
+            // 役職が重複した場合、マスターの役職を決定しなおす
+            while (insider == master)
+            {
+                master = random.Next(0, players.Count);
+            }
+
+            players[insider].Role = INSIDER;
+            players[master].Role = MASTER;
+
+            return players;
         }
 
         /// <summary>
@@ -42,7 +74,7 @@ namespace InsiderGame
         /// </summary>
         /// <param name="numberOfPlayers"></param>
         /// <returns></returns>
-        public static List<Player> CreatePlayers(int numberOfPlayers)
+        internal static List<Player> CreatePlayers(int numberOfPlayers)
         {
             // 選択された人数分だけプレイヤーを作成
             List<Player> players = new List<Player>();
@@ -51,7 +83,7 @@ namespace InsiderGame
                 Player player = new Player()
                 {
                     Name = $"player_{i + 1}",   // 初期値は"player_1","player_2"
-                    Role = "Common",            // 初期値はCommon
+                    Role = COMMON,              // 初期値はCommon
                 };
 
                 players.Add(player);

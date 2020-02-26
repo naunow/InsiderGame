@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InsiderGame.SetWord">
+
+    <StackLayout BackgroundColor="#EE0000">
+
+        <FlexLayout Direction="Column"
+                    Margin="50">
+            <Label Text="マスターは〇〇です！"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+
+            <Label Text="お題を選びます"
+               TextColor="White"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"/>
+
+        </FlexLayout>
+        <Button Text="えらぶ"
+                Margin="5"
+                Clicked="ChooseWord"/>
+
+        <FlexLayout BackgroundColor="Black" Direction="Column"
+                    Padding="50,30"
+                    Margin="10">
+            
+            <Label Text="宇宙飛行士"
+               TextColor="White"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+                />
+            <Label Text="astronaut"
+                   TextColor="White"
+                   FontSize="Medium"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </FlexLayout>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="別の"
+                    Grid.Row="0" Grid.Column="0"
+                Margin="5,80"/>
+
+            <Button Text="決定"
+                    Grid.Row="0" Grid.Column="1"
+                Margin="5,80"/>
+        </Grid>
+              
+    </StackLayout>
+</ContentPage>

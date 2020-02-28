@@ -35,12 +35,15 @@
                FontAttributes="Bold"
                HorizontalTextAlignment="Center"
                VerticalTextAlignment="Center"
+                   x:Name="JapaneseWord"
                 />
             <Label Text="astronaut"
                    TextColor="White"
                    FontSize="Medium"
                    HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+                   VerticalTextAlignment="Center"
+                   x:Name="EnglishWord"
+                   />
 
         </FlexLayout>
         

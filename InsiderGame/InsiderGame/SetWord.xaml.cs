@@ -23,10 +23,10 @@ namespace InsiderGame
 
         private void ChooseWord(object sender, EventArgs e)
         {
-            FlexLayout flexLayout = new FlexLayout
-            {
-                
-            };
+            this.JapaneseWord.Text = "りんご";
+            this.EnglishWord.Text = "Apple";
+
+
         }
     }
 }

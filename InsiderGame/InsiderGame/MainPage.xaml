@@ -25,6 +25,12 @@
                HorizontalOptions="Center"
                VerticalOptions="StartAndExpand" />
 
+        <Button Text="Set new words(Coming soon)"
+                BackgroundColor="White"
+                IsEnabled="False"
+                Margin="10,0"
+                />
+
         <Button Text="Play"
                 BackgroundColor="White"
                 Margin="10, 80"

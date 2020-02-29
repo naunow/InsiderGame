@@ -33,9 +33,6 @@
                    Padding="0,0,0,0"/>
 
         </FlexLayout>
-        <!--<Button Text="えらぶ"
-                Margin="5"
-                Clicked="ChooseWord"/>-->
 
         <FlexLayout BackgroundColor="Black" Direction="Column"
                     Padding="50,30"
@@ -74,9 +71,10 @@
                     Margin="5,80"
                     Clicked="ChooseWord"/>
 
-            <Button Text="決定"
+            <Button Text="決定(役職確認へ)"
                     Grid.Row="0" Grid.Column="1"
-                Margin="5,80"/>
+                    Margin="5,80"
+                    Clicked="CheckRole"/>
         </Grid>
               
     </StackLayout>

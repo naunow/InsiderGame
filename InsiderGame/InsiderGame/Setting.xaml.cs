@@ -32,15 +32,21 @@ namespace InsiderGame
             //Content = flexLayout;
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             int pressed = Convert.ToInt16(button.Text);
 
             var commonPlayers = CreatePlayers(pressed);
-            var setRolePlayers = SetRole(commonPlayers);
 
-            Navigation.PushAsync(new SetWord(setRolePlayers));
+            var gameSet = new GameSet()
+            {
+                playerList = SetRole(commonPlayers),
+            };
+
+            //Navigation.InsertPageBefore(new SetWord(gameSet), this);
+            //await Navigation.PopAsync();
+            await Navigation.PushAsync(new SetWord(gameSet));
             //Application.Current.MainPage = new SetWord(setRolePlayers);
         }
 
@@ -65,6 +71,7 @@ namespace InsiderGame
 
             players[insider].Role = INSIDER;
             players[master].Role = MASTER;
+            players[master].IsCheckedRole = true;   // マスターは最初に役職チェックをするのでtrueに設定
 
             return players;
         }
@@ -80,10 +87,13 @@ namespace InsiderGame
             List<Player> players = new List<Player>();
             for (int i = 0; i < numberOfPlayers; i++)
             {
+                var iPlusOne = i + 1;
                 Player player = new Player()
                 {
-                    Name = $"player_{i + 1}",   // 初期値は"player_1","player_2"
-                    Role = COMMON,              // 初期値はCommon
+                    Id = iPlusOne,                  // 1から始まるように設定
+                    Name = $"player_{iPlusOne}",    // 初期値は"player_1","player_2"
+                    Role = COMMON,                  // 初期値はCommon
+                    IsCheckedRole = false,
                 };
 
                 players.Add(player);

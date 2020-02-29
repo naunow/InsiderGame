@@ -22,10 +22,10 @@ namespace InsiderGame
 
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
 
-            Navigation.PushAsync(new Setting());
+            await Navigation.PushAsync(new Setting());
         }
     }
 }

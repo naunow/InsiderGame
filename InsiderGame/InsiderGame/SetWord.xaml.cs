@@ -12,13 +12,17 @@ namespace InsiderGame
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SetWord : ContentPage
     {
-        private List<Player> setRolePlayers;
+        private List<Player> _setRolePlayers;
 
         public SetWord(List<Player> setRolePlayers)
         {
             InitializeComponent();
 
-            this.setRolePlayers = setRolePlayers;
+            _setRolePlayers = setRolePlayers;
+
+            var masterName = _setRolePlayers.Where(x => x.Role == "Master").Select(x=>x.Name).FirstOrDefault();
+            this.masterJapaneseLabel.Text = $"マスターは {masterName} です！";
+            this.masterEnglishLabel.Text = $"Master is {masterName} !";
         }
 
         private void ChooseWord(object sender, EventArgs e)

@@ -20,16 +20,16 @@ namespace InsiderGame
         {
             InitializeComponent();
 
-            Button orangeButton = new Button
-            {
-                Text = "2"
-            };
+            //Button orangeButton = new Button
+            //{
+            //    Text = "2"
+            //};
 
-            orangeButton.Clicked += Button_Clicked;
+            //orangeButton.Clicked += Button_Clicked;
 
-            FlexLayout flexLayout = new FlexLayout();
-            flexLayout.Children.Add(orangeButton);
-            Content = flexLayout;
+            //FlexLayout flexLayout = new FlexLayout();
+            //flexLayout.Children.Add(orangeButton);
+            //Content = flexLayout;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -40,8 +40,8 @@ namespace InsiderGame
             var commonPlayers = CreatePlayers(pressed);
             var setRolePlayers = SetRole(commonPlayers);
 
-            //Navigation.PushAsync(new SetWord(setRolePlayers));
-            Application.Current.MainPage = new SetWord(setRolePlayers);
+            Navigation.PushAsync(new SetWord(setRolePlayers));
+            //Application.Current.MainPage = new SetWord(setRolePlayers);
         }
 
         /// <summary>

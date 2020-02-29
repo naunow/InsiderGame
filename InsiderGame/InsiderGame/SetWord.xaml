@@ -11,30 +11,42 @@
         <FlexLayout Direction="Column"
                     Margin="50">
             <Label Text="マスターは〇〇です！"
-               TextColor="White"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"/>
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   x:Name="masterJapaneseLabel"/>
+            <Label Text="Master is 〇〇！"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   x:Name="masterEnglishLabel"/>
 
             <Label Text="お題を選びます"
-               TextColor="White"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"/>
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Padding="0,50,0,0"/>
+            <Label Text="Choose a word"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Padding="0,0,0,0"/>
 
         </FlexLayout>
-        <Button Text="えらぶ"
+        <!--<Button Text="えらぶ"
                 Margin="5"
-                Clicked="ChooseWord"/>
+                Clicked="ChooseWord"/>-->
 
         <FlexLayout BackgroundColor="Black" Direction="Column"
                     Padding="50,30"
                     Margin="10">
             
             <Label Text="宇宙飛行士"
-               TextColor="White"
-               FontSize="Large"
-               FontAttributes="Bold"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
                    x:Name="JapaneseWord"
                 />
             <Label Text="astronaut"
@@ -57,9 +69,10 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Text="別の"
+            <Button Text="えらぶ"
                     Grid.Row="0" Grid.Column="0"
-                Margin="5,80"/>
+                    Margin="5,80"
+                    Clicked="ChooseWord"/>
 
             <Button Text="決定"
                     Grid.Row="0" Grid.Column="1"

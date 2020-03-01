@@ -6,21 +6,30 @@
              mc:Ignorable="d"
              x:Class="InsiderGame.Discussion">
     <StackLayout BackgroundColor="#EE0000"
-                 Padding="50">
+                 Padding="50"
+                 BindingContext="{Binding}"
+                 x:Name="countDown">
         <Label Text="お題をあてよう"
                TextColor="White"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
                />
 
-        <Label Text="{Binding Time}"
+        <Label Text="{Binding Minutes}"
                TextColor="White"
                FontSize="60"
                Margin="50"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
-               x:Name="DiscussionTimer"
                />
+        <Label Text="{Binding Seconds}"
+               TextColor="White"
+               FontSize="60"
+               Margin="50"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               />
+
 
         <Button Text="わかった！"/>
 

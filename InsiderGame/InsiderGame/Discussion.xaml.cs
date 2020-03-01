@@ -24,35 +24,29 @@ namespace InsiderGame
 
         private void SetUp()
         {
-            //var date = Convert.ToDateTime("2020/3/2");
-            //var time = date - DateTime.Now;
-            //Timer timer = new Timer()
-            //{
-            //    TimeSpan = time,
-            //};
             Timer timer = new Timer();
-            DiscussionTimer.BindingContext = timer;
-            //timer.TimeSpan = TimeSpan.FromSeconds(10);
-            var fiveMinutes = new TimeSpan(0, 5, 0);
+            //DiscussionTimer.BindingContext = timer;
+            //countDown.BindingContext = timer;
+            timer.TimeSpan = new TimeSpan(0, 5, 0);
             var i = 0;
             Device.StartTimer(new TimeSpan(0, 0, 1), () =>
             {
                 i += 1;
-                var interval = (fiveMinutes - new TimeSpan(0, 0, i));
+                var interval = (timer.TimeSpan - new TimeSpan(0, 0, i));
                 timer.Minutes = interval.Minutes.ToString();
                 timer.Seconds = interval.Seconds.ToString("00");
                 timer.Time = $"{timer.Minutes}:{timer.Seconds}";
-                //timer.Seconds = (DateTime.Now.Second - fiveMinutes).ToString();
-                DiscussionTimer.SetBinding(Label.TextProperty, "Time");
-                return true;
-            });
-            //timer.Minutes = "6:00";
+                //DiscussionTimer.SetBinding(Label.TextProperty, "Minutes");
+                //DiscussionTimer.SetBinding(Label.TextProperty, "Seconds");
+                countDown.BindingContext = timer;
 
+                return interval != TimeSpan.Zero;
+            });
         }
 
         public class Timer
         {
-            //public TimeSpan TimeSpan { get; set; }
+            public TimeSpan TimeSpan { get; set; }
 
             public string Time { get; set; }
 

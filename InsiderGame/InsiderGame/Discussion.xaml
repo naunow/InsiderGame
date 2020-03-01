@@ -13,14 +13,17 @@
                HorizontalTextAlignment="Center"
                />
 
-        <Label Text="4:30"
+        <Label Text="{Binding Time}"
                TextColor="White"
                FontSize="60"
                Margin="50"
                VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"/>
+               HorizontalTextAlignment="Center"
+               x:Name="DiscussionTimer"
+               />
 
         <Button Text="わかった！"/>
-        
+
     </StackLayout>
+
 </ContentPage>

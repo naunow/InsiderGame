@@ -47,8 +47,6 @@ namespace InsiderGame
         {
             Navigation.InsertPageBefore(new Role(_gameSet), this);
             await Navigation.PopAsync();
-
-            //await Navigation.PushAsync(new Role(_gameSet));
         }
     }
 }

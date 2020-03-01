@@ -70,16 +70,11 @@ namespace InsiderGame
             {
                 // まだプレイヤーが残っていたら役職ページへ
                 Navigation.InsertPageBefore(new Role(_gameSet), this);
-                //await Navigation.PushAsync(new Role(_gameSet));
-                //await Navigation.PopAsync();
             }
             else
             {
                 // 全てのプレイヤーが表示されていたらゲームプレイへ
                 Navigation.InsertPageBefore(new Discussion(_gameSet), this);
-                //await Navigation.PushAsync(new Discussion(_gameSet));
-                //await Navigation.PopAsync();
-
             }
             await Navigation.PopAsync();
 

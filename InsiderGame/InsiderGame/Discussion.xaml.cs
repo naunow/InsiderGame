@@ -36,9 +36,12 @@ namespace InsiderGame
                 timer.Minutes = interval.Minutes.ToString();
                 timer.Seconds = interval.Seconds.ToString("00");
                 timer.Time = $"{timer.Minutes}:{timer.Seconds}";
-                //DiscussionTimer.SetBinding(Label.TextProperty, "Minutes");
-                //DiscussionTimer.SetBinding(Label.TextProperty, "Seconds");
                 countDown.BindingContext = timer;
+                this.Seconds.Text = timer.Seconds;
+                this.Minutes.Text = timer.Minutes;
+                //countDown.SetBinding(Label.TextProperty, "Minutes");
+                //countDown.SetBinding(Label.TextProperty, "Seconds");
+                //countDown.BindingContext = timer;
 
                 return interval != TimeSpan.Zero;
             });
@@ -53,6 +56,12 @@ namespace InsiderGame
             public string Minutes { get; set; }
             public string Seconds { get; set; }
 
+        }
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            Navigation.InsertPageBefore(new DebateTime(_gameSet), this);
+            await Navigation.PopAsync();
         }
     }
 }

@@ -7,31 +7,51 @@
              x:Class="InsiderGame.Discussion">
     <StackLayout BackgroundColor="#EE0000"
                  Padding="50"
-                 BindingContext="{Binding}"
                  x:Name="countDown">
+                 <!--BindingContext="{Binding}"-->
+        
         <Label Text="お題をあてよう"
                TextColor="White"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
                />
 
-        <Label Text="{Binding Minutes}"
-               TextColor="White"
-               FontSize="60"
-               Margin="50"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
-               />
-        <Label Text="{Binding Seconds}"
-               TextColor="White"
-               FontSize="60"
-               Margin="50"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
+        <Grid Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="5"
+                   HorizontalOptions="End"
+                   TextColor="White"
+                   FontSize="40"
+                   x:Name="Minutes"
+                   Grid.Row="0" Grid.Column="0"
                />
 
+            <Label Text=":"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="40"
+                   Grid.Row="0" Grid.Column="1"
+               />
+            <Label Text="00"
+                   HorizontalOptions="Start"
+                   TextColor="White"
+                   FontSize="40"
+                   x:Name="Seconds"
+                   Grid.Row="0" Grid.Column="2"
+               />
+        </Grid>
 
-        <Button Text="わかった！"/>
+        <Button Text="わかった！"
+                Clicked="Button_Clicked"
+                VerticalOptions="EndAndExpand"/>
 
     </StackLayout>
 

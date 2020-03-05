@@ -9,8 +9,15 @@
                  Padding="50"
                  BindingContext="{Binding}"
                  x:Name="countDown">
+        
         <Label Text="インサイダーは誰なのか話し合おう"
                TextColor="White"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               />
+        <Label Text="Talk about who is the insider"
+               TextColor="White"
+               BackgroundColor="Black"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
                />
@@ -30,7 +37,9 @@
                HorizontalTextAlignment="Center"
                />
 
-        <Button Text="結果を見る"/>
+        <Button Text="結果を見る"
+                HeightRequest="72"
+                VerticalOptions="EndAndExpand"/>
 
     </StackLayout>
 </ContentPage>

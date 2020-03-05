@@ -50,6 +50,7 @@
         </Grid>
 
         <Button Text="わかった！"
+                HeightRequest="72"
                 Clicked="Button_Clicked"
                 VerticalOptions="EndAndExpand"/>
 

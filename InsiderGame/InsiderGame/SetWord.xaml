@@ -56,7 +56,7 @@
 
         </FlexLayout>
         
-        <Grid>
+        <Grid VerticalOptions="EndAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
 
@@ -68,11 +68,13 @@
 
             <Button Text="えらぶ"
                     Grid.Row="0" Grid.Column="0"
+                    HeightRequest="60"
                     Margin="5,80"
                     Clicked="ChooseWord"/>
 
             <Button Text="決定(役職確認へ)"
                     Grid.Row="0" Grid.Column="1"
+                    HeightRequest="60"
                     Margin="5,80"
                     Clicked="CheckRole"/>
         </Grid>

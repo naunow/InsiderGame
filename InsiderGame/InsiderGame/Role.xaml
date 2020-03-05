@@ -22,6 +22,7 @@
                    x:Name="masterEnglishLabel"/>
 
             <Button Text="役職を見る"
+                    HeightRequest="60"
                     Clicked="CheckRole"
                     x:Name="checkRoleButton"/>
 
@@ -35,6 +36,8 @@
             
             <Label Text="Common"
                    TextColor="White"
+                   FontSize="24"
+                   FontAttributes="Bold"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    x:Name="roleLabel" />
@@ -43,6 +46,8 @@
         
             <Button Text="次のプレイヤーへ"
                     Margin="10,50"
+                    HeightRequest="72"
+                    VerticalOptions="EndAndExpand"
                     x:Name="nextPlayerButton"
                     Clicked="NextPlayer"/>
     </StackLayout>

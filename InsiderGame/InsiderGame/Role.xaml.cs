@@ -37,6 +37,15 @@ namespace InsiderGame
             this.masterJapaneseLabel.Text = $"{playerName}の役職は……";
             this.masterEnglishLabel.Text = $"{playerName}'s role is ...";
             this.roleLabel.Text = _player.Role;
+
+            if (_player.Role == "Common")
+            {
+                roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whitequ.png");
+            }
+            else
+            {
+                roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whiteInsiderImage.png");
+            }
         }
 
 

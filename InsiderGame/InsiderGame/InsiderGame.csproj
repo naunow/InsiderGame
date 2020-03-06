@@ -11,15 +11,25 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\ColoredInsiderImage.png" />
+    <None Remove="Assets\blackex.png" />
+    <None Remove="Assets\blackInsiderImage.png" />
+    <None Remove="Assets\blackqu.png" />
     <None Remove="Assets\LargeInsiderImage.png" />
     <None Remove="Assets\union.png" />
+    <None Remove="Assets\whiteex.png" />
+    <None Remove="Assets\whiteInsiderImage.png" />
+    <None Remove="Assets\whitequ.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Assets\ColoredInsiderImage.png" />
+    <EmbeddedResource Include="Assets\blackex.png" />
+    <EmbeddedResource Include="Assets\blackInsiderImage.png" />
+    <EmbeddedResource Include="Assets\blackqu.png" />
     <EmbeddedResource Include="Assets\LargeInsiderImage.png" />
     <EmbeddedResource Include="Assets\union.png" />
+    <EmbeddedResource Include="Assets\whiteex.png" />
+    <EmbeddedResource Include="Assets\whiteInsiderImage.png" />
+    <EmbeddedResource Include="Assets\whitequ.png" />
   </ItemGroup>
 
   <ItemGroup>

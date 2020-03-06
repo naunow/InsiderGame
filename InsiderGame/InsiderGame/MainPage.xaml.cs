@@ -17,8 +17,7 @@ namespace InsiderGame
         {
             InitializeComponent();
 
-            InsiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.ColoredInsiderImage.png");
-
+            InsiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.blackInsiderImage.png");
 
         }
 

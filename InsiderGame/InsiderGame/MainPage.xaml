@@ -12,8 +12,7 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout BackgroundColor="#EE0000">
-        <Image 
-               HeightRequest="200"
+        <Image HeightRequest="200"
                x:Name="InsiderImage"
                Margin="0,120,0,0"/>
 

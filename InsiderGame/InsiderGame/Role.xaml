@@ -28,19 +28,28 @@
 
         </FlexLayout>
 
-        <FlexLayout BackgroundColor="Black"
+        <FlexLayout BackgroundColor="Black"                    
                     Direction="Column"
                     Margin="10"
                     Padding="50"
                     x:Name="roleFlexLayout">
             
-            <Label Text="Common"
+            <Grid>
+                <Image x:Name="roleName"
+                   IsVisible="True" 
+                   IsOpaque="True" 
+                   Opacity="0.3" 
+                   HeightRequest="150"
+                   Aspect="AspectFit" />
+
+                <Label Text="COMMON"
                    TextColor="White"
                    FontSize="24"
                    FontAttributes="Bold"
                    VerticalTextAlignment="Center"
                    HorizontalTextAlignment="Center"
                    x:Name="roleLabel" />
+            </Grid>
 
         </FlexLayout>
         

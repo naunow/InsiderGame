@@ -10,16 +10,26 @@
 
         <FlexLayout Direction="Column"
                     Margin="50">
-            <Label Text="〇〇の役職は・・・"
+            <Grid BackgroundColor="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Label Text="〇〇の役職は・・・"
                    TextColor="White"
+                       BackgroundColor="#EE0000"
+                       Margin="1"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
+                       Grid.Row="0"
                    x:Name="masterJapaneseLabel"/>
-            <Label Text="〇〇's role is ..."
+                <Label Text="〇〇's role is ..."
                    TextColor="White"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
+                       Grid.Row="1"
                    x:Name="masterEnglishLabel"/>
+            </Grid>
 
             <Button Text="役職を見る"
                     HeightRequest="60"

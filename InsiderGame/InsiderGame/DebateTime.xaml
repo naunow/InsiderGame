@@ -9,33 +9,65 @@
                  Padding="50"
                  BindingContext="{Binding}"
                  x:Name="countDown">
-        
+
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
         <Label Text="インサイダーは誰なのか話し合おう"
                TextColor="White"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
+               Grid.Row="0"
+               BackgroundColor="#EE0000"
+               Margin="1"
                />
         <Label Text="Talk about who is the insider"
                TextColor="White"
-               BackgroundColor="Black"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
+               Grid.Row="1"
+               />
+        </Grid>
+
+
+        <Grid Margin="50">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="2"
+                   HorizontalOptions="End"
+                   TextColor="White"
+                   FontSize="40"
+                   FontAttributes="Bold"
+                   x:Name="Minutes"
+                   Grid.Row="0" Grid.Column="0"
+                   
                />
 
-        <Label Text="{Binding Minutes}"
-               TextColor="White"
-               FontSize="60"
-               Margin="50"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
+            <Label Text=":"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="40"
+                   Grid.Row="0" Grid.Column="1"
                />
-        <Label Text="{Binding Seconds}"
-               TextColor="White"
-               FontSize="60"
-               Margin="50"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
+            <Label Text="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Start"
+                   TextColor="White"
+                   FontSize="40"
+                   x:Name="Seconds"
+                   Grid.Row="0" Grid.Column="2"
                />
+        </Grid>
 
         <Button Text="結果を見る"
                 HeightRequest="72"

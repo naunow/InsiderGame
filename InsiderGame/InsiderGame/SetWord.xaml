@@ -10,27 +10,51 @@
 
         <FlexLayout Direction="Column"
                     Margin="50">
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            
             <Label Text="マスターは〇〇です！"
                    TextColor="White"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
+                   BackgroundColor="#EE0000"
+                   Margin="1"
+                   Grid.Row="0"
                    x:Name="masterJapaneseLabel"/>
             <Label Text="Master is 〇〇！"
                    TextColor="White"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
+                   Grid.Row="1"
                    x:Name="masterEnglishLabel"/>
+        </Grid>
 
-            <Label Text="お題を選びます"
+            <Grid BackgroundColor="Black"
+                  Margin="0,20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30" />
+                    <RowDefinition Height="30" />
+                </Grid.RowDefinitions>
+                <Label Text="お題を選びます"
                    TextColor="White"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"
-                   Padding="0,50,0,0"/>
-            <Label Text="Choose a word"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
+                   Grid.Row="0"
+                       BackgroundColor="#EE0000"
+                       Margin="1"
                    Padding="0,0,0,0"/>
+
+                <Label Text="Choose a word"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   Grid.Row="1"
+                   Padding="0,0,0,0"/>
+
+            </Grid>
 
         </FlexLayout>
 

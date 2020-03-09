@@ -42,7 +42,7 @@
                     Direction="Column"
                     Margin="10"
                     Padding="50"
-                    x:Name="roleFlexLayout">
+                    x:Name="roleFlexLayout" IsVisible="True">
             
             <Grid>
                 <Image x:Name="roleName"

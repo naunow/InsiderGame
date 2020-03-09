@@ -7,7 +7,6 @@
              x:Class="InsiderGame.DebateTime">
     <StackLayout BackgroundColor="#EE0000"
                  Padding="50"
-                 BindingContext="{Binding}"
                  x:Name="countDown">
 
         <Grid BackgroundColor="Black">
@@ -42,7 +41,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="2"
+            <Label Text=""
                    HorizontalOptions="End"
                    TextColor="White"
                    FontSize="40"
@@ -52,14 +51,14 @@
                    
                />
 
-            <Label Text=":"
+            <Label Text=""
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
                    TextColor="White"
                    FontSize="40"
                    Grid.Row="0" Grid.Column="1"
                />
-            <Label Text="30"
+            <Label Text=""
                    FontAttributes="Bold"
                    HorizontalOptions="Start"
                    TextColor="White"

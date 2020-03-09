@@ -13,6 +13,8 @@ namespace InsiderGame
     public partial class Discussion : ContentPage
     {
         private GameSet _gameSet;
+        private Timer _timer;
+        private bool isStoppedTimer = true;
 
         public Discussion(GameSet gameSet)
         {
@@ -25,42 +27,31 @@ namespace InsiderGame
         private void SetUp()
         {
             Timer timer = new Timer();
-            //DiscussionTimer.BindingContext = timer;
-            //countDown.BindingContext = timer;
+
             timer.TimeSpan = new TimeSpan(0, 5, 0);
             var i = 0;
             Device.StartTimer(new TimeSpan(0, 0, 1), () =>
             {
-                i += 1;
-                var interval = (timer.TimeSpan - new TimeSpan(0, 0, i));
-                timer.Minutes = interval.Minutes.ToString();
-                timer.Seconds = interval.Seconds.ToString("00");
-                timer.Time = $"{timer.Minutes}:{timer.Seconds}";
+                timer.TimeSpan = (timer.TimeSpan - new TimeSpan(0, 0, 1));
+
+                //var interval = (timer.TimeSpan - new TimeSpan(0, 0, i));
+                //timer.TimeSpan = interval;
+                //timer.Minutes = interval.Minutes.ToString();
+                //timer.Seconds = interval.Seconds.ToString("00");
+                //timer.Time = $"{timer.Minutes}:{timer.Seconds}";
                 countDown.BindingContext = timer;
                 this.Seconds.Text = timer.Seconds;
                 this.Minutes.Text = timer.Minutes;
-                //countDown.SetBinding(Label.TextProperty, "Minutes");
-                //countDown.SetBinding(Label.TextProperty, "Seconds");
-                //countDown.BindingContext = timer;
+                _timer = timer;
 
-                return interval != TimeSpan.Zero;
+                return timer.TimeSpan != TimeSpan.Zero && isStoppedTimer;
             });
-        }
-
-        public class Timer
-        {
-            public TimeSpan TimeSpan { get; set; }
-
-            public string Time { get; set; }
-
-            public string Minutes { get; set; }
-            public string Seconds { get; set; }
-
-        }
+        }       
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.InsertPageBefore(new DebateTime(_gameSet), this);
+            isStoppedTimer = false;
+            Navigation.InsertPageBefore(new DebateTime(_gameSet, _timer), this);
             await Navigation.PopAsync();
         }
     }

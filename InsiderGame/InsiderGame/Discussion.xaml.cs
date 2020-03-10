@@ -29,16 +29,10 @@ namespace InsiderGame
             Timer timer = new Timer();
 
             timer.TimeSpan = new TimeSpan(0, 5, 0);
-            var i = 0;
             Device.StartTimer(new TimeSpan(0, 0, 1), () =>
             {
                 timer.TimeSpan = (timer.TimeSpan - new TimeSpan(0, 0, 1));
 
-                //var interval = (timer.TimeSpan - new TimeSpan(0, 0, i));
-                //timer.TimeSpan = interval;
-                //timer.Minutes = interval.Minutes.ToString();
-                //timer.Seconds = interval.Seconds.ToString("00");
-                //timer.Time = $"{timer.Minutes}:{timer.Seconds}";
                 countDown.BindingContext = timer;
                 this.Seconds.Text = timer.Seconds;
                 this.Minutes.Text = timer.Minutes;

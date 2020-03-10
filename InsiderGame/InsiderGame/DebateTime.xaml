@@ -22,7 +22,7 @@
                BackgroundColor="#EE0000"
                Margin="1"
                />
-        <Label Text="Talk about who is the insider"
+        <Label Text="Find the insider."
                TextColor="White"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
@@ -41,7 +41,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text=""
+            <Label Text="00"
                    HorizontalOptions="End"
                    TextColor="White"
                    FontSize="40"
@@ -51,14 +51,14 @@
                    
                />
 
-            <Label Text=""
+            <Label Text=":"
                    FontAttributes="Bold"
                    HorizontalOptions="Center"
                    TextColor="White"
                    FontSize="40"
                    Grid.Row="0" Grid.Column="1"
                />
-            <Label Text=""
+            <Label Text="00"
                    FontAttributes="Bold"
                    HorizontalOptions="Start"
                    TextColor="White"

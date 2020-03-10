@@ -22,7 +22,7 @@
                Margin="1"
                BackgroundColor="#EE0000"
                />
-            <Label Text="Answer the correct word"
+            <Label Text="Find the word."
                TextColor="White"
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
@@ -40,7 +40,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Label Text="5"
+            <Label Text="05"
                    HorizontalOptions="End"
                    TextColor="White"
                    FontSize="40"

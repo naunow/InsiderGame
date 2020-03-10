@@ -22,18 +22,19 @@ namespace InsiderGame
             _gameSet = gameset;
             _timer = timer;
 
+            _timer.TimeSpan = (new TimeSpan(0, 5, 0) - _timer.TimeSpan);
+            this.Seconds.Text = (Convert.ToInt32(_timer.Seconds) - 1).ToString("00");
+            this.Minutes.Text = _timer.Minutes;
+
             SetUp();
         }
 
         private void SetUp()
         {
-            var i = 0;
             Device.StartTimer(new TimeSpan(0, 0, 1), () =>
             {
                 _timer.TimeSpan = (_timer.TimeSpan - new TimeSpan(0, 0, 1));
-                //timer.Minutes = interval.Minutes.ToString();
-                //timer.Seconds = interval.Seconds.ToString("00");
-                //timer.Time = $"{timer.Minutes}:{timer.Seconds}";
+
                 countDown.BindingContext = _timer;
                 this.Seconds.Text = _timer.Seconds;
                 this.Minutes.Text = _timer.Minutes;

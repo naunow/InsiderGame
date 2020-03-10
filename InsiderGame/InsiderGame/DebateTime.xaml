@@ -70,7 +70,8 @@
 
         <Button Text="結果を見る"
                 HeightRequest="72"
-                VerticalOptions="EndAndExpand"/>
+                VerticalOptions="EndAndExpand"
+                Clicked="Button_Clicked"/>
 
     </StackLayout>
 </ContentPage>

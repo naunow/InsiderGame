@@ -23,6 +23,9 @@ namespace InsiderGame
 
             InitializeComponent();
 
+            wordInJapanese.Text = "お題はりんごです！";
+            wordInEnglish.Text = "The Word is Apple!";
+
             // 初期表示時は非表示に設定
             this.roleFlexLayout.IsVisible = false;
             this.nextPlayerButton.IsVisible = false;
@@ -41,10 +44,12 @@ namespace InsiderGame
             if (_player.Role == "Common")
             {
                 roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whitequ.png");
+                wordGrid.IsVisible = false;
             }
             else
             {
                 roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whiteInsiderImage.png");
+                wordGrid.IsVisible = true;
             }
         }
 

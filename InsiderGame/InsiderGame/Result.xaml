@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InsiderGame.Result">
+    <StackLayout BackgroundColor="#EE0000"
+                 Padding="50">
+
+        <Grid BackgroundColor="Black">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+            <Label Text="インサイダーは......"
+               TextColor="White"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.Row="0"
+               BackgroundColor="#EE0000"
+               Margin="1"
+               />
+            <Label Text="The insider is......"
+               TextColor="White"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               Grid.Row="1"
+               />
+        </Grid>
+
+
+        <FlexLayout BackgroundColor="Black"                    
+                    Direction="Column"
+                    VerticalOptions="CenterAndExpand"
+                    Padding="50"
+                    x:Name="roleFlexLayout" 
+                    IsVisible="True">
+
+            <Grid>
+                <Image x:Name="insiderImage"
+                   IsVisible="True" 
+                   IsOpaque="True" 
+                   Opacity="0.3" 
+                   HeightRequest="150"
+                   Aspect="AspectFit" />
+
+                <Label Text="Player〇〇"
+                   TextColor="White"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   x:Name="insiderName" />
+            </Grid>
+
+        </FlexLayout>
+
+        <Button Text="TOPへ"
+                HeightRequest="60"
+                Clicked="Button_Clicked"/>
+
+    </StackLayout>
+</ContentPage>

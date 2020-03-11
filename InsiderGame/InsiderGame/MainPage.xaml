@@ -24,16 +24,17 @@
                HorizontalOptions="Center"
                VerticalOptions="StartAndExpand" />
 
-        <Button Text="Set new words(Coming soon)"
+        <Button Text="Set new words"
                 BackgroundColor="White"
-                IsEnabled="False"
+                IsEnabled="True"
                 Margin="10,0"
+                Clicked="SetWordButton_Clicked"
                 />
 
         <Button Text="Play"
                 BackgroundColor="White"
                 Margin="10, 80"
-                Clicked="Button_Clicked" />
+                Clicked="PlayButton_Clicked" />
         
     </StackLayout>
 

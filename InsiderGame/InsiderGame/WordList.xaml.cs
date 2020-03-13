@@ -14,29 +14,25 @@ namespace InsiderGame
     {
         public WordList()
         {
-            InitializeComponent();
+            InitializeComponent();          
 
-            using(SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))
             {
-                conn.DropTable<Word>();
                 conn.CreateTable<Word>();
 
-                var words = new List<Word>()
-                {
-                    new Word(){WordInEnglish = "Orange", WordInJapanese = "みかん"},
-                    new Word(){WordInEnglish = "Peach", WordInJapanese = "もも"},
-                };
-
-                conn.InsertAll(words);
-
-                wordListView.ItemsSource = words;
+                wordListView.ItemsSource = conn.Table<Word>().ToList();
             }
-
         }
 
         private void ToolbarItem_Activated(object sender, EventArgs e)
         {
-
+            Navigation.PushAsync(new NewWord());
         }
     }
 }

@@ -13,7 +13,7 @@ namespace InsiderGame
     public partial class SetWord : ContentPage
     {
         private GameSet _gameSet = new GameSet{ };
-        //private List<Player> _setRolePlayers;
+        private Word _word = new Word { };
 
         public SetWord(GameSet gameSet)
         {
@@ -24,6 +24,8 @@ namespace InsiderGame
             var masterName = _gameSet.playerList.Where(x => x.Role == "Master").Select(x=>x.Name).FirstOrDefault();
             this.masterJapaneseLabel.Text = $"マスターは {masterName} です！";
             this.masterEnglishLabel.Text = $"Master is {masterName} !";
+
+            GetWord();
         }
 
         /// <summary>
@@ -33,9 +35,24 @@ namespace InsiderGame
         /// <param name="e"></param>
         private void ChooseWord(object sender, EventArgs e)
         {
-            // TODO:実際にはDBから情報を持ってきてランダムで表示させる
-            this.JapaneseWord.Text = "りんご";
-            this.EnglishWord.Text = "Apple";
+            GetWord();
+        }
+
+        /// <summary>
+        /// DBからお題をランダムで取得する
+        /// </summary>
+        private void GetWord()
+        {
+            var conn = new SQLite.SQLiteConnection(App.DB_PATH);
+            var words = conn.Table<Word>().ToList();
+            var randomIndexNumber = new Random().Next(0, words.Count());
+
+            this.JapaneseWord.Text = words[randomIndexNumber].WordInJapanese;
+            this.EnglishWord.Text = words[randomIndexNumber].WordInEnglish;
+
+            // 設定したお題を保存する
+            _word.WordInEnglish = words[randomIndexNumber].WordInEnglish;
+            _word.WordInJapanese = words[randomIndexNumber].WordInJapanese;
         }
 
         /// <summary>
@@ -45,7 +62,7 @@ namespace InsiderGame
         /// <param name="e"></param>
         private async void CheckRole(object sender, EventArgs e)
         {
-            Navigation.InsertPageBefore(new Role(_gameSet), this);
+            Navigation.InsertPageBefore(new Role(_gameSet, _word), this);
             await Navigation.PopAsync();
         }
     }

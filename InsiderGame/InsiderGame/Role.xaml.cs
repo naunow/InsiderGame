@@ -14,17 +14,19 @@ namespace InsiderGame
     {
         private readonly GameSet _gameSet;
         private Player _player;
+        private Word _word;
 
         const string MASTER = "Master";
 
-        public Role(GameSet gameSet)
+        public Role(GameSet gameSet, Word word)
         {
             _gameSet = gameSet;
+            _word = word;
 
             InitializeComponent();
 
-            wordInJapanese.Text = "お題はりんごです！";
-            wordInEnglish.Text = "The Word is Apple!";
+            wordInJapanese.Text = $"お題は{_word.WordInJapanese}です！";
+            wordInEnglish.Text = $"The Word is {_word.WordInEnglish}!";
 
             // 初期表示時は非表示に設定
             this.roleFlexLayout.IsVisible = false;
@@ -83,7 +85,7 @@ namespace InsiderGame
             if (_gameSet.playerList.Any(x=>!x.IsCheckedRole))
             {
                 // まだプレイヤーが残っていたら役職ページへ
-                Navigation.InsertPageBefore(new Role(_gameSet), this);
+                Navigation.InsertPageBefore(new Role(_gameSet, _word), this);
             }
             else
             {

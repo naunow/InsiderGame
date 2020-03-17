@@ -22,12 +22,14 @@ namespace InsiderGame
         {
             base.OnAppearing();
 
-            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))
-            {
-                conn.CreateTable<Word>();
+            //var wordData = DataUtil.GetDefaultWordData();
 
-                wordListView.ItemsSource = conn.Table<Word>().ToList();
-            }
+            //using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))
+            //{
+            //    conn.CreateTable<Word>();
+
+            //    wordListView.ItemsSource = conn.Table<Word>().ToList();
+            //}
         }
 
         private void ToolbarItem_Activated(object sender, EventArgs e)

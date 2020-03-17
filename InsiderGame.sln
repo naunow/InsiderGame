@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsiderGame.iOS", "InsiderG
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsiderGame", "InsiderGame\InsiderGame\InsiderGame.csproj", "{4CBE2704-E485-408A-BED9-E5C1C8C01C9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsiderGameTests", "InsiderGame\InsiderGameTests\InsiderGameTests.csproj", "{8E51199A-6BB1-471C-AE95-8C9CC12F6164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsiderGameTests", "InsiderGame\InsiderGameTests\InsiderGameTests.csproj", "{8E51199A-6BB1-471C-AE95-8C9CC12F6164}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

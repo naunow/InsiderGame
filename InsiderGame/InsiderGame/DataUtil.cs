@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
+using Xamarin.Forms;
 
 namespace InsiderGame
 {
@@ -16,39 +17,22 @@ namespace InsiderGame
             FULL_PATH = Path.Combine(fileLocation, fileName);
         }
 
-        static public List<Word> GetDefaultWordData(string FULL_PATH)
+        public List<Word> GetDefaultWordData(string fullPath = "")
         {
-            var words = new List<Word>();
-            var jsonData = File.ReadAllText(FULL_PATH, System.Text.Encoding.GetEncoding(50220));
-            
-                // 変数 jsonData にファイルの内容を代入 
-                //var jsonData = sr.ReadToEnd();
+            if (string.IsNullOrEmpty(fullPath))
+            {
+                fullPath = FULL_PATH;
+            }
 
-                // デシリアライズして words にセット              
-                words = JsonConvert.DeserializeObject<List<Word>>(jsonData);           
+            // Jsonファイルのデシリアライズ
+            var words = JsonConvert.DeserializeObject<List<Word>>(File.ReadAllText(fullPath));
 
             return words;
         }
 
-        static public string Silialize()
+        static public string Silialize(object obj)
         {
-            List<Word> words = new List<Word>()
-            {
-                new Word()
-                {
-                    Id = 0,
-                    WordInEnglish = "Peach",
-                    WordInJapanese = "もも",
-                },
-                new Word()
-                {
-                    Id = 0,
-                    WordInEnglish = "Apple",
-                    WordInJapanese = "りんご",
-                },
-            };
-
-            var json = JsonConvert.SerializeObject(words);
+            var json = JsonConvert.SerializeObject(obj);
 
             return json;
         }

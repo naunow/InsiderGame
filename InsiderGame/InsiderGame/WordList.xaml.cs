@@ -15,7 +15,6 @@ namespace InsiderGame
         public WordList()
         {
             InitializeComponent();          
-
         }
 
         protected override void OnAppearing()
@@ -25,16 +24,21 @@ namespace InsiderGame
             var dataUtil = new DataUtil();
             var wordData = dataUtil.GetDefaultWordData();
 
-            using (SQLite.SQLiteConnection conn = new SQLite.SQLiteConnection(App.DB_PATH))
+            using (SQLite.SQLiteConnection db = new SQLite.SQLiteConnection(App.DB_PATH))
             {
-                conn.DropTable<Word>();
-                conn.CreateTable<Word>();
-                conn.InsertAll(wordData);
+                db.DropTable<Word>();
+                db.CreateTable<Word>();
+                db.InsertAll(wordData);
 
-                wordListView.ItemsSource = conn.Table<Word>().ToList();
+                wordListView.ItemsSource = db.Table<Word>().ToList();
             }
         }
 
+        /// <summary>
+        /// ワード追加ボタン(+)を押下したとき
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ToolbarItem_Activated(object sender, EventArgs e)
         {
             Navigation.PushAsync(new NewWord());

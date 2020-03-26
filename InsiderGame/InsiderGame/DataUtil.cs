@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using Xamarin.Forms;
 
@@ -19,13 +20,16 @@ namespace InsiderGame
 
         public List<Word> GetDefaultWordData(string fullPath = "")
         {
-            if (string.IsNullOrEmpty(fullPath))
-            {
-                fullPath = FULL_PATH;
-            }
+            var words = new List<Word>();
 
-            // Jsonファイルのデシリアライズ
-            var words = JsonConvert.DeserializeObject<List<Word>>(File.ReadAllText(fullPath));
+            // アセンブリからファイル名を指定して読み込む
+            var assembly = typeof(DataUtil).GetTypeInfo().Assembly;
+            using (Stream stream = assembly.GetManifestResourceStream("InsiderGame.Assets.initialWordData.json"))
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                // Jsonファイルのデシリアライズ
+                words = JsonConvert.DeserializeObject<List<Word>>(reader.ReadToEnd());
+            }
 
             return words;
         }

@@ -12,30 +12,31 @@ namespace InsiderGame.Tests
 
         public DataUtilTests()
         {
-            string fileName = "C://Users//nauno//source//repos//InsiderGame//InsiderGame//InsiderGame//Assets//test.json";
+            //string fileName = "C://Users//nauno//source//repos//InsiderGame//InsiderGame//InsiderGame//Assets//test.json";
             //string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            string fileLocation = string.Empty;
-            FULL_PATH = Path.Combine(fileLocation, fileName);
+            //string fileLocation = string.Empty;
+            //FULL_PATH = Path.Combine(fileLocation, fileName);
         }
 
         [Fact(DisplayName = "Jsonから初期データ取得")]
         public void GetDefaultWordDataTest()
         {
-            var dataUtil = new DataUtil();
-            var words = dataUtil.GetDefaultWordData(FULL_PATH);
+            //var dataUtil = new DataUtil();
+            //var words = dataUtil.GetDefaultWordData();
+            var words = DataUtil.GetDefaultWordData();
 
             List<Word> expectedWords = new List<Word>()
             {
                 new Word()
                 {
                     Id = 0,
-                    WordInEnglish = "Peach",
+                    WordInEnglish = "peach",
                     WordInJapanese = "もも",
                 },
                 new Word()
                 {
                     Id = 0,
-                    WordInEnglish = "Apple",
+                    WordInEnglish = "apple",
                     WordInJapanese = "りんご",
                 },
             };
@@ -54,19 +55,19 @@ namespace InsiderGame.Tests
                 new Word()
                 {
                     Id = 0,
-                    WordInEnglish = "Peach",
+                    WordInEnglish = "peach",
                     WordInJapanese = "もも",
                 },
                 new Word()
                 {
                     Id = 0,
-                    WordInEnglish = "Apple",
+                    WordInEnglish = "apple",
                     WordInJapanese = "りんご",
                 },
             };
 
             var json = DataUtil.Silialize(words);
-            string expectedJson = "[{\"Id\":0,\"WordInJapanese\":\"もも\",\"WordInEnglish\":\"Peach\"},{\"Id\":0,\"WordInJapanese\":\"りんご\",\"WordInEnglish\":\"Apple\"}]";
+            string expectedJson = "[{\"Id\":0,\"WordInJapanese\":\"もも\",\"WordInEnglish\":\"peach\"},{\"Id\":0,\"WordInJapanese\":\"りんご\",\"WordInEnglish\":\"apple\"}]";
 
             Assert.Equal(expectedJson, json);
         }

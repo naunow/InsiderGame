@@ -21,8 +21,9 @@ namespace InsiderGame
         {
             base.OnAppearing();
 
-            var dataUtil = new DataUtil();
-            var wordData = dataUtil.GetDefaultWordData();
+            //var dataUtil = new DataUtil();
+            //var wordData = dataUtil.GetDefaultWordData();
+            var wordData = DataUtil.GetDefaultWordData();
 
             using (SQLite.SQLiteConnection db = new SQLite.SQLiteConnection(App.DB_PATH))
             {

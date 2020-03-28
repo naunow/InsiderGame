@@ -22,7 +22,8 @@ namespace InsiderGame.Droid
 
             // DBパスの設定
             string fileName = "insidergame_db.sqlite";
-            string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            // string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            string fileLocation = GetExternalFilesDir(null).ToString();
             string full_path = Path.Combine(fileLocation, fileName);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

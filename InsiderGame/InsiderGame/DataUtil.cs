@@ -10,15 +10,19 @@ namespace InsiderGame
 {
     public class DataUtil
     {
-        static string FULL_PATH;
+        //static string FULL_PATH;
         public DataUtil()
         {
-            string fileName = "InsiderGame/Assets/initialWordData.json";
-            string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            FULL_PATH = Path.Combine(fileLocation, fileName);
+            //string fileName = "InsiderGame/Assets/initialWordData.json";
+            //string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
+            //FULL_PATH = Path.Combine(fileLocation, fileName);
         }
 
-        public List<Word> GetDefaultWordData(string fullPath = "")
+        /// <summary>
+        /// デフォルトワードリストの取得
+        /// </summary>
+        /// <returns></returns>
+        static public List<Word> GetDefaultWordData()
         {
             var words = new List<Word>();
 
@@ -34,6 +38,11 @@ namespace InsiderGame
             return words;
         }
 
+        /// <summary>
+        /// シリアライズ
+        /// </summary>
+        /// <param name="obj">シリアライズしたいオブジェクト</param>
+        /// <returns></returns>
         static public string Silialize(object obj)
         {
             var json = JsonConvert.SerializeObject(obj);

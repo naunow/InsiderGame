@@ -2,21 +2,1081 @@
   {
     "Id": 0,
     "WordInJapanese": "もも",
-    "WordInEnglish": "Peach"
+    "WordInEnglish": "peach"
   },
   {
     "Id": 0,
     "WordInJapanese": "りんご",
-    "WordInEnglish": "Apple"
+    "WordInEnglish": "apple"
   },
   {
     "Id": 0,
     "WordInJapanese": "みかん",
-    "WordInEnglish": "Orange"
+    "WordInEnglish": "orange"
   },
   {
     "Id": 0,
     "WordInJapanese": "宇宙飛行士",
-    "WordInEnglish": "Astronaut"
+    "WordInEnglish": "astronaut"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ナンバープレート",
+    "WordInEnglish": "license plate"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "賽銭箱",
+    "WordInEnglish": "offering box"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "CD",
+    "WordInEnglish": "CD"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "靴べら",
+    "WordInEnglish": "shoehorn"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ハードル",
+    "WordInEnglish": "hurdle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "洗濯バサミ",
+    "WordInEnglish": "clothespin"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ゴマ",
+    "WordInEnglish": "sesame seeds"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "がびょう",
+    "WordInEnglish": "thumbtack"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ヘアピン",
+    "WordInEnglish": "hairpin"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "パセリ",
+    "WordInEnglish": "parsley"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "わさび",
+    "WordInEnglish": "wasabi"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "漬物",
+    "WordInEnglish": "pickles"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "元カレ/元カノ",
+    "WordInEnglish": "ex-boyfrend/ex-girlfriend"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "マヨネーズ",
+    "WordInEnglish": "mayonnaise"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "傘立て",
+    "WordInEnglish": "umbrella stand"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "おみくじ",
+    "WordInEnglish": "fortune"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ダンゴムシ",
+    "WordInEnglish": "woodlice"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ミミズ",
+    "WordInEnglish": "worm"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "食券",
+    "WordInEnglish": "food voucher"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "値札",
+    "WordInEnglish": "price tag"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "柔軟剤",
+    "WordInEnglish": "softener"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "手裏剣",
+    "WordInEnglish": "shuriken"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "表札",
+    "WordInEnglish": "nameplate"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "悪魔",
+    "WordInEnglish": "devil"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "名刺",
+    "WordInEnglish": "business card"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "コインロッカー",
+    "WordInEnglish": "coin locker"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "モナリザ",
+    "WordInEnglish": "Mona Lisa"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "アップルパイ",
+    "WordInEnglish": "apple pie"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "万年筆",
+    "WordInEnglish": "fountain pen"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "火力発電所",
+    "WordInEnglish": "thermal power plant"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "乾電池",
+    "WordInEnglish": "dry battery"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "風車",
+    "WordInEnglish": "windmill"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "太陽電池",
+    "WordInEnglish": "solar battery"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "蒸気機関",
+    "WordInEnglish": "stream engine"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "国境",
+    "WordInEnglish": "border"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "会議",
+    "WordInEnglish": "meeting"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "地球温暖化",
+    "WordInEnglish": "global warming"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "歴史",
+    "WordInEnglish": "history"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "文化",
+    "WordInEnglish": "culture"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "文明",
+    "WordInEnglish": "civilization"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "駐車場",
+    "WordInEnglish": "parking lot"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "テニスコート",
+    "WordInEnglish": "tennis court"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "住宅地",
+    "WordInEnglish": "residential area"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "畑",
+    "WordInEnglish": "field"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "チョコレート",
+    "WordInEnglish": "chocolate"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "方眼紙",
+    "WordInEnglish": "graph paper"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "消しゴム",
+    "WordInEnglish": "eraser"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "感情",
+    "WordInEnglish": "emotion"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "真夜中",
+    "WordInEnglish": "midnight"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "エンジン",
+    "WordInEnglish": "engine"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "病院",
+    "WordInEnglish": "hospital"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "コーヒー",
+    "WordInEnglish": "coffee"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "オーブン",
+    "WordInEnglish": "oven"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "広告",
+    "WordInEnglish": "advertising"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "科学技術",
+    "WordInEnglish": "technology"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ピザ",
+    "WordInEnglish": "pizza"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "病気",
+    "WordInEnglish": "disease"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "パン",
+    "WordInEnglish": "bread"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ダイヤモンド",
+    "WordInEnglish": "diamond"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "医者",
+    "WordInEnglish": "doctor"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "音楽",
+    "WordInEnglish": "music"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "記憶",
+    "WordInEnglish": "memory"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "軍",
+    "WordInEnglish": "army"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "問題",
+    "WordInEnglish": "problem"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "カメラ",
+    "WordInEnglish": "camera"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "災害",
+    "WordInEnglish": "disaster"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "道路",
+    "WordInEnglish": "road"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "宿題",
+    "WordInEnglish": "homework"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "シャツ",
+    "WordInEnglish": "shirt"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "革命",
+    "WordInEnglish": "revolution"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "雇い主",
+    "WordInEnglish": "employer"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "女",
+    "WordInEnglish": "lady"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "胸",
+    "WordInEnglish": "chest"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "宝箱",
+    "WordInEnglish": "treasure chest"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "インターネット",
+    "WordInEnglish": "internet"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "秘書",
+    "WordInEnglish": "secretary"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "プレゼン",
+    "WordInEnglish": "presentation"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "高校",
+    "WordInEnglish": "high school"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "子ども",
+    "WordInEnglish": "child"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "お金",
+    "WordInEnglish": "money"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "体操",
+    "WordInEnglish": "gymnastics"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ビーバー",
+    "WordInEnglish": "beaver"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "化粧",
+    "WordInEnglish": "makeup"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "自転車",
+    "WordInEnglish": "bicycle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "まぶた",
+    "WordInEnglish": "eyelids"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "背骨",
+    "WordInEnglish": "spine"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "マンホール",
+    "WordInEnglish": "manhole"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "毛糸",
+    "WordInEnglish": "wool"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "作家",
+    "WordInEnglish": "writer"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "城",
+    "WordInEnglish": "castle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "蛾",
+    "WordInEnglish": "moth"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "漫画",
+    "WordInEnglish": "manga"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ワニ",
+    "WordInEnglish": "crocodile"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "クマ",
+    "WordInEnglish": "bear"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "暖炉",
+    "WordInEnglish": "fireplace"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ニワトリ",
+    "WordInEnglish": "chicken"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ダチョウ",
+    "WordInEnglish": "ostrich"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "トイレブラシ",
+    "WordInEnglish": "toilet brush"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "戦艦",
+    "WordInEnglish": "battleship"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "キャベツ",
+    "WordInEnglish": "cabbage"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ヘリコプター",
+    "WordInEnglish": "helicopter"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "TVドラマ",
+    "WordInEnglish": "tv drama"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "海岸",
+    "WordInEnglish": "beach"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ヤシの木",
+    "WordInEnglish": "palm tree"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "散髪",
+    "WordInEnglish": "haircut"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ロバ",
+    "WordInEnglish": "donkey"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "グレープフルーツ",
+    "WordInEnglish": "grapefruit"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "靴",
+    "WordInEnglish": "shoes"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "知識",
+    "WordInEnglish": "knowledge"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "紙",
+    "WordInEnglish": "paper"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "旅行者",
+    "WordInEnglish": "passenger"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ラジオ塔",
+    "WordInEnglish": "radio tower"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "軍事基地",
+    "WordInEnglish": "military base"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ジャングル",
+    "WordInEnglish": "jungle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "サンタクロース",
+    "WordInEnglish": "Santa Claus"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ジャック・オ・ランタン",
+    "WordInEnglish": "jack o lantern"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "宗教",
+    "WordInEnglish": "religion"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "痛み",
+    "WordInEnglish": "pain"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "電卓",
+    "WordInEnglish": "calculator"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "岩",
+    "WordInEnglish": "rock"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ピエロ",
+    "WordInEnglish": "crown"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "手首",
+    "WordInEnglish": "wrist"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "時計",
+    "WordInEnglish": "clock"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "乞食",
+    "WordInEnglish": "beggar"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "カタツムリ",
+    "WordInEnglish": "snail"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ドラム",
+    "WordInEnglish": "drum"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "エレキギター",
+    "WordInEnglish": "electric guitar"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "獣",
+    "WordInEnglish": "beast"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "血",
+    "WordInEnglish": "blood"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "上着",
+    "WordInEnglish": "coat"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "島",
+    "WordInEnglish": "island"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "つらら",
+    "WordInEnglish": "icicle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "レーザー光線",
+    "WordInEnglish": "laser"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ハッブル宇宙望遠鏡",
+    "WordInEnglish": "hubble telescope"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "アマゾン熱帯雨林",
+    "WordInEnglish": "amazon rainforest"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "サハラ砂漠",
+    "WordInEnglish": "sahara desert"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "霧",
+    "WordInEnglish": "fog"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "雷雨",
+    "WordInEnglish": "thunderstorm"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "れんが",
+    "WordInEnglish": "brick"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "童話",
+    "WordInEnglish": "fairy tale"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ビル・ゲイツ",
+    "WordInEnglish": "Bill Gates"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "スティーブン・ホーキング",
+    "WordInEnglish": "Stephen Hawking"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "マイケル・ジャクソン",
+    "WordInEnglish": "Michael Jackson"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "コロンブス",
+    "WordInEnglish": "Christopher Columbus"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ナポレオン",
+    "WordInEnglish": "Napoleon"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ロンドンブリッジ",
+    "WordInEnglish": "London bridge"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "東京スカイツリー",
+    "WordInEnglish": "Tokyo sky tree"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "飛行機",
+    "WordInEnglish": "airplane"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "太陽",
+    "WordInEnglish": "Sun"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "消防士",
+    "WordInEnglish": "fireman"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ピーナッツ",
+    "WordInEnglish": "peanut"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "発電所",
+    "WordInEnglish": "power plant"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ゴジラ",
+    "WordInEnglish": "godzilla"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "トラック",
+    "WordInEnglish": "truck"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "パンケーキ",
+    "WordInEnglish": "pancake"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "人形",
+    "WordInEnglish": "doll"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "銀河",
+    "WordInEnglish": "galaxy"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "脳",
+    "WordInEnglish": "brain"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "芸術",
+    "WordInEnglish": "art"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "パズル",
+    "WordInEnglish": "puzzle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "刑務所",
+    "WordInEnglish": "prison"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ネックレス",
+    "WordInEnglish": "necklace"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "魔法",
+    "WordInEnglish": "magic"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "バレーボール",
+    "WordInEnglish": "volleyball"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "",
+    "WordInEnglish": "bedroom"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "風呂",
+    "WordInEnglish": "bathtub"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "チーズケーキ",
+    "WordInEnglish": "cheese cake"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "庭",
+    "WordInEnglish": "garden"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "劇場",
+    "WordInEnglish": "theatre"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "歩道",
+    "WordInEnglish": "sidewalk"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "トンネル",
+    "WordInEnglish": "tunnel"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "アパート",
+    "WordInEnglish": "apartment"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "迷路",
+    "WordInEnglish": "labyrinth"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "小麦",
+    "WordInEnglish": "wheat"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "米",
+    "WordInEnglish": "rice"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "柱",
+    "WordInEnglish": "pillar"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "床",
+    "WordInEnglish": "floor"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "屋上",
+    "WordInEnglish": "roof terrace"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "壁",
+    "WordInEnglish": "wall"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ビール",
+    "WordInEnglish": "beer"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "紙コップ",
+    "WordInEnglish": "paper cup"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "天気予報",
+    "WordInEnglish": "weather report"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "アナウンサー",
+    "WordInEnglish": "announcer"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "芸人",
+    "WordInEnglish": "comedian"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "火山",
+    "WordInEnglish": "volcano"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "池",
+    "WordInEnglish": "pond"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "遠隔操作",
+    "WordInEnglish": "remote control"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "洗濯機",
+    "WordInEnglish": "washing machine"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "炊飯器",
+    "WordInEnglish": "rice cooker"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "川",
+    "WordInEnglish": "river"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "交通標識",
+    "WordInEnglish": "road sign"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "鉄塔",
+    "WordInEnglish": "pylon"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ブロック塀",
+    "WordInEnglish": "fence"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "高速道路",
+    "WordInEnglish": "highway"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "天文学者",
+    "WordInEnglish": "astronomer"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "スペースシャトル",
+    "WordInEnglish": "space shuttle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "地球",
+    "WordInEnglish": "Earth"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "サイコロ",
+    "WordInEnglish": "dice"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "斧",
+    "WordInEnglish": "axe"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "チェス",
+    "WordInEnglish": "chess"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "トランプ",
+    "WordInEnglish": "playing card"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ボードゲーム",
+    "WordInEnglish": "board game"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "カジノ",
+    "WordInEnglish": "casino"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "吸血鬼",
+    "WordInEnglish": "vampire"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ゾンビ",
+    "WordInEnglish": "zombie"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ろうそく",
+    "WordInEnglish": "candle"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "幽霊",
+    "WordInEnglish": "ghost"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "ピラミッド",
+    "WordInEnglish": "pyramid"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "教科書",
+    "WordInEnglish": "textbook"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "動物園",
+    "WordInEnglish": "zoo"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "歯ブラシ",
+    "WordInEnglish": "toothbrush"
+  },
+  {
+    "Id": 0,
+    "WordInJapanese": "磁石",
+    "WordInEnglish": "magnet"
   }
 ]

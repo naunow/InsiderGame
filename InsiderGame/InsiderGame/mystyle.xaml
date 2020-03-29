@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="InsiderGame.mystyle">
+    <ContentPage.Resources>
+        <StyleSheet Source="./style.css" />
+        <ResourceDictionary>
+            
+        <!--ラベル-->
+        
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="40" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="StartAndExpand" />
+            </Style>
+            
+            
+        <!--ボタン-->
+        
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="WidthRequest" Value="246" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <!--<ContentView.Content>
+      <StackLayout>
+          <Label Text="Hello Xamarin.Forms!" />
+      </StackLayout>
+  </ContentView.Content>-->
+</ContentView>

@@ -32,12 +32,11 @@ namespace InsiderGame
             {
                 Text = text,
                 IsEnabled = true,
-                VerticalOptions = LayoutOptions.End,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
                 CornerRadius = 10,
                 BackgroundColor = backGroundColor,
                 TextColor = textColor,
                 WidthRequest = width,
+                HeightRequest = 60,
             };
 
             return button;
@@ -50,9 +49,29 @@ namespace InsiderGame
         /// <param name="japaneseText">日本語ボタンテキスト</param>
         /// <param name="englishText">英語ボタンテキスト</param>
         /// <returns></returns>
+        public static Button WideBlackButton(string text)
+        {
+            var wideButton = Component.Button("", "", Color.Black, Color.White, 246);
+            wideButton.VerticalOptions = LayoutOptions.End;
+            wideButton.HorizontalOptions = LayoutOptions.Fill;
+            wideButton.Text = text;
+
+            return wideButton;
+        }
+
+        /// <summary>
+        /// 幅広のボタン(黒)
+        /// </summary>
+        /// <param name="japaneseText">日本語ボタンテキスト</param>
+        /// <param name="englishText">英語ボタンテキスト</param>
+        /// <returns></returns>
         public static Button WideBlackButton(string japaneseText, string englishText)
         {
-            return Component.Button(japaneseText, englishText, Color.Black, Color.White, 246);
+            var wideButton = Component.Button(japaneseText, englishText, Color.Black, Color.White, 246);
+            wideButton.VerticalOptions = LayoutOptions.End;
+            wideButton.HorizontalOptions = LayoutOptions.FillAndExpand;
+
+            return wideButton;
         }
 
         /// <summary>
@@ -63,7 +82,11 @@ namespace InsiderGame
         /// <returns></returns>
         public static Button WideWhiteButton(string japaneseText, string englishText)
         {
-            return Component.Button(japaneseText, englishText, Color.White, Color.Black, 246);
+            var wideButton = Component.Button(japaneseText, englishText, Color.White, Color.Black, 246);
+            wideButton.VerticalOptions = LayoutOptions.End;
+            wideButton.HorizontalOptions = LayoutOptions.FillAndExpand;
+
+            return wideButton;
         }
         #endregion
 
@@ -77,6 +100,9 @@ namespace InsiderGame
         public static Button BottomBlackButton(string japaneseText, string englishText)
         {
             var bottomButton = Component.WideBlackButton(japaneseText, englishText);
+            bottomButton.VerticalOptions = LayoutOptions.End;
+            bottomButton.HorizontalOptions = LayoutOptions.FillAndExpand;
+
             bottomButton.Margin = new Thickness(0, 0, 0, 80);
             return bottomButton;
         }
@@ -90,11 +116,42 @@ namespace InsiderGame
         public static Button BottomWhiteButton(string japaneseText, string englishText)
         {
             var bottomButton = Component.WideWhiteButton(japaneseText, englishText);
+            bottomButton.VerticalOptions = LayoutOptions.End;
+            bottomButton.HorizontalOptions = LayoutOptions.FillAndExpand;
+
             bottomButton.Margin = new Thickness(0, 0, 0, 80);
             return bottomButton;
         }
         #endregion
 
+        /// <summary>
+        /// 『役職を確認する』ボタン
+        /// </summary>
+        /// <param name="japaneseText">日本語ボタンテキスト</param>
+        /// <param name="englishText">英語ボタンテキスト</param>
+        /// <returns></returns>
+        public static Button RoleCheckButton(string japaneseText, string englishText)
+        {
+            var roleCheckButton = Component.WideWhiteButton(japaneseText, englishText);
+            roleCheckButton.HeightRequest = 120;
+
+            return roleCheckButton;
+        }
+
+        /// <summary>
+        /// 2つ並ぶボタン
+        /// </summary>
+        /// <param name="japaneseText"></param>
+        /// <param name="englishText"></param>
+        /// <returns></returns>
+        public static Button HalfWhiteButton(string japaneseText, string englishText)
+        {
+            var halfButton = Component.Button(japaneseText, englishText, Color.White, Color.Black, 130);
+
+            return halfButton;
+        }
+
+        #region ラベル
         /// <summary>
         /// TOPタイトルラベル
         /// </summary>
@@ -114,6 +171,20 @@ namespace InsiderGame
 
             return titleLabel;
         }
+
+        public static Label BodyLabel(string text)
+        {
+            Label bodyLabel = new Label()
+            {
+                Text = text,
+                FontSize = 14,
+                TextColor = Color.FromHex(BLACK),
+                VerticalOptions = LayoutOptions.StartAndExpand,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+            };
+            return bodyLabel;
+        }
+        #endregion
 
         /// <summary>
         /// 画像表示

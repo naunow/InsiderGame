@@ -5,47 +5,55 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="InsiderGame.MainPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="./mystyle.xml" />
+        <!--<StyleSheet Source="./style.css" />-->
+        <!--<ResourceDictionary>
+            --><!--ラベル--><!--
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="40" />
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="StartAndExpand" />
+            </Style>
+            
+            --><!--ボタン--><!--
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Black" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="WidthRequest" Value="246" />
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="VerticalOptions" Value="End" />
+            </Style>
+        </ResourceDictionary>-->
+    </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
         <ToolbarItem />
         <!--ツールバーアイテムをタッチしたときのイベント。同名メソッドに飛ぶ-->
     </ContentPage.ToolbarItems>
 
-    <!--<StackLayout BackgroundColor="#EE0000">
+    <StackLayout BackgroundColor="#EE0000">
         <Image HeightRequest="200"
                x:Name="InsiderImage"
                Margin="0,120,0,0"/>
 
-        <Label Text="INSIDER"               
-               FontSize="40"
-               TextColor="Black"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"
-               VerticalOptions="StartAndExpand" />
+        <Label Text="INSIDER" />
 
         <Button Text="Set new words"
-                BackgroundColor="Black"
-                TextColor="White"
-                IsEnabled="True"
-                VerticalOptions="End"
-                HorizontalOptions="FillAndExpand"
-                CornerRadius="10"
                 Margin="60,0"
                 Clicked="SetWordButton_Clicked"
+                StyleClass="blackButton"
                 />
         
         <Button Text="Play"
-                BackgroundColor="Black"
-                TextColor="White"
-                IsEnabled="True"
-                VerticalOptions="End"
-                HorizontalOptions="FillAndExpand"
-                CornerRadius="10"
-                WidthRequest="246"
                 Margin="60,36,60,80"
                 Clicked="PlayButton_Clicked"
-                />-->
+                StyleClass="blackButton"
+                />
         
-    <!--</StackLayout>-->
+    </StackLayout>
 
 </ContentPage>

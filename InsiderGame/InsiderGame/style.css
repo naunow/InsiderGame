@@ -1,0 +1,10 @@
+﻿label{
+    font-size: 40;
+    text-align:center;
+}
+
+.blackButton{
+    background-color:black;
+    border-radius:10;
+    color:white;
+}

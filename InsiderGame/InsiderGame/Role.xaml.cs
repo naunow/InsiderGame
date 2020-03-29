@@ -24,6 +24,11 @@ namespace InsiderGame
             _word = word;
 
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
             wordInJapanese.Text = $"お題は{_word.WordInJapanese}です！";
             wordInEnglish.Text = $"The Word is {_word.WordInEnglish}!";
@@ -33,7 +38,7 @@ namespace InsiderGame
             this.nextPlayerButton.IsVisible = false;
 
             // 今回表示するプレイヤー情報
-            _player = _gameSet.playerList.Where(x=>!x.IsCheckedRole).First();
+            _player = _gameSet.playerList.Where(x => !x.IsCheckedRole).First();
             // 表示済みのプレイヤーとしてチェックをつける
             _gameSet.playerList.Where(x => x.Id == _player.Id).First().IsCheckedRole = true;
 
@@ -54,7 +59,6 @@ namespace InsiderGame
                 wordGrid.IsVisible = true;
             }
         }
-
 
         // =====================================================
         // イベントハンドラ

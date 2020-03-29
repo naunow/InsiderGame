@@ -16,7 +16,6 @@
                x:Name="InsiderImage"
                Margin="0,120,0,0"/>
 
-        <!-- Place new controls here -->
         <Label Text="INSIDER"               
                FontSize="40"
                TextColor="Black"
@@ -25,16 +24,39 @@
                VerticalOptions="StartAndExpand" />
 
         <Button Text="Set new words"
+                BackgroundColor="Black"
+                TextColor="White"
+                IsEnabled="True"
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"
+                Margin="60,0"
+                Clicked="SetWordButton_Clicked"
+                />
+        
+        <Button Text="Play"
+                BackgroundColor="Black"
+                TextColor="White"
+                IsEnabled="True"
+                VerticalOptions="End"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"
+                WidthRequest="246"
+                Margin="60,36,60,80"
+                Clicked="PlayButton_Clicked"
+                />
+        
+        <!--<Button Text="Set new words"
                 BackgroundColor="White"
                 IsEnabled="True"
                 Margin="10,0"
                 Clicked="SetWordButton_Clicked"
-                />
+                />-->
 
-        <Button Text="Play"
+        <!--<Button Text="Play"
                 BackgroundColor="White"
                 Margin="10, 80"
-                Clicked="PlayButton_Clicked" />
+                Clicked="PlayButton_Clicked" />-->
         
     </StackLayout>
 

@@ -10,14 +10,6 @@ namespace InsiderGame
 {
     public class DataUtil
     {
-        //static string FULL_PATH;
-        public DataUtil()
-        {
-            //string fileName = "InsiderGame/Assets/initialWordData.json";
-            //string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-            //FULL_PATH = Path.Combine(fileLocation, fileName);
-        }
-
         /// <summary>
         /// デフォルトワードリストの取得
         /// </summary>

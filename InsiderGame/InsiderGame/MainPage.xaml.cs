@@ -17,75 +17,41 @@ namespace InsiderGame
         {
             InitializeComponent();
 
-            //InsiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.blackInsiderImage.png");
+            var topImage = Component.Image("InsiderGame.Assets.blackInsiderImage.png", 200, marginTop: 120);
+            var titleLabel = Component.Title("INSIDER");
 
-            Label label = new Label()
-            {
-                Text = "INSIDER",
-                FontSize = 40,
-                TextColor = Color.Black,
-                FontAttributes = FontAttributes.Bold,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.StartAndExpand,
-            };
+            var setWordButton = Component.WideBlackButton("単語を登録する", "Set new Words");
+            setWordButton.Margin = new Thickness(60, 0);
+            setWordButton.Clicked += SetWordButton_Clicked;
 
-            //Button button = new Button()
-            //{
-            //    Text = "Set new words",
-            //    BackgroundColor = Color.Black,
-            //    TextColor = Color.White,
-            //    IsEnabled = true,
-            //    VerticalOptions = LayoutOptions.End,
-            //    HorizontalOptions = LayoutOptions.FillAndExpand,
-            //    CornerRadius = 10,
-            //    WidthRequest = 246,
-            //    Margin = new Thickness(60,0),
-            //};
+            var playButton = Component.WideBlackButton("プレイ", "Play");
+            playButton.Margin = new Thickness(60, 36, 60, 80);
+            playButton.Clicked += PlayButton_Clicked;
 
-            var button = Component.BlackButton("Set new Words", 60, 0, 60, 0);
-            button.Clicked += SetWordButton_Clicked;
+            var stackLayout = Component.RedStackLayout();
 
-            //Button button2 = new Button()
-            //{
-            //    Text = "Play",
-            //    BackgroundColor = Color.Black,
-            //    TextColor = Color.White,
-            //    IsEnabled = true,
-            //    VerticalOptions = LayoutOptions.End,
-            //    HorizontalOptions = LayoutOptions.FillAndExpand,
-            //    CornerRadius = 10,
-            //    WidthRequest = 246,
-            //    Margin = new Thickness(60, 36, 60, 80),
-            //};
-            //button2.Clicked += PlayButton_Clicked;
-
-            var button2 = Component.BlackButton("Play2", marginTop: 36);
-            button2.Clicked += PlayButton_Clicked;
-
-            Image image = new Image()
-            {
-                HeightRequest = 200,
-                Margin = new Thickness(0, 120, 0, 0),
-                Source = ImageSource.FromResource("InsiderGame.Assets.blackInsiderImage.png"),
-            };
-
-            StackLayout stackLayout = new StackLayout()
-            {
-                BackgroundColor = Color.FromHex("EE0000"),
-            };
-
-            stackLayout.Children.Add(image);
-            stackLayout.Children.Add(label);
-            stackLayout.Children.Add(button);
-            stackLayout.Children.Add(button2);
+            stackLayout.Children.Add(topImage);
+            stackLayout.Children.Add(titleLabel);
+            stackLayout.Children.Add(setWordButton);
+            stackLayout.Children.Add(playButton);
             Content = stackLayout;
         }
 
+        /// <summary>
+        /// プレイボタン押下時
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void PlayButton_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Setting());
         }
 
+        /// <summary>
+        /// 単語登録ボタン押下時
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SetWordButton_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new WordList());

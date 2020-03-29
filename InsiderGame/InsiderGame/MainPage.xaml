@@ -11,7 +11,7 @@
         <!--ツールバーアイテムをタッチしたときのイベント。同名メソッドに飛ぶ-->
     </ContentPage.ToolbarItems>
 
-    <StackLayout BackgroundColor="#EE0000">
+    <!--<StackLayout BackgroundColor="#EE0000">
         <Image HeightRequest="200"
                x:Name="InsiderImage"
                Margin="0,120,0,0"/>
@@ -44,20 +44,8 @@
                 WidthRequest="246"
                 Margin="60,36,60,80"
                 Clicked="PlayButton_Clicked"
-                />
-        
-        <!--<Button Text="Set new words"
-                BackgroundColor="White"
-                IsEnabled="True"
-                Margin="10,0"
-                Clicked="SetWordButton_Clicked"
                 />-->
-
-        <!--<Button Text="Play"
-                BackgroundColor="White"
-                Margin="10, 80"
-                Clicked="PlayButton_Clicked" />-->
         
-    </StackLayout>
+    <!--</StackLayout>-->
 
 </ContentPage>

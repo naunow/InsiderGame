@@ -6,28 +6,7 @@
              mc:Ignorable="d"
              x:Class="InsiderGame.MainPage">
     <ContentPage.Resources>
-        <StyleSheet Source="./mystyle.xml" />
-        <!--<StyleSheet Source="./style.css" />-->
-        <!--<ResourceDictionary>
-            --><!--ラベル--><!--
-            <Style TargetType="Label">
-                <Setter Property="FontSize" Value="40" />
-                <Setter Property="TextColor" Value="Black" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="HorizontalOptions" Value="Center" />
-                <Setter Property="VerticalOptions" Value="StartAndExpand" />
-            </Style>
-            
-            --><!--ボタン--><!--
-            <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Black" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="CornerRadius" Value="10" />
-                <Setter Property="WidthRequest" Value="246" />
-                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                <Setter Property="VerticalOptions" Value="End" />
-            </Style>
-        </ResourceDictionary>-->
+        <ResourceDictionary Source="./mystyle.xaml" />
     </ContentPage.Resources>
 
     <ContentPage.ToolbarItems>
@@ -38,9 +17,11 @@
     <StackLayout BackgroundColor="#EE0000">
         <Image HeightRequest="200"
                x:Name="InsiderImage"
+               
                Margin="0,120,0,0"/>
 
-        <Label Text="INSIDER" />
+        <Label Text="INSIDER"
+               Style="{StaticResource TitleLabel}"/>
 
         <Button Text="Set new words"
                 Margin="60,0"

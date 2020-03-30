@@ -17,6 +17,7 @@ namespace InsiderGame
         {
             InitializeComponent();
 
+            InsiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.blackInsiderImage.png");
             //var topImage = Component.Image("InsiderGame.Assets.blackInsiderImage.png", 200, marginTop: 120);
             //var titleLabel = Component.Title("INSIDER");
 

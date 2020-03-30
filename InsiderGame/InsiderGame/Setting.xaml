@@ -5,43 +5,38 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="InsiderGame.Setting">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="./mystyle.xaml" />
+    </ContentPage.Resources>
 
     <StackLayout BackgroundColor="#EE0000">
         <Label Text="何人で遊びますか？"
-               TextColor="White"
-               VerticalOptions="Start" 
-               HorizontalOptions="CenterAndExpand" />
+               Margin="0,90,0,22"
+               Style="{StaticResource BodyLabel}" />
         <Label Text="How many players?"
-               TextColor="White"
-               VerticalOptions="Start" 
-               HorizontalOptions="CenterAndExpand" />
+               Style="{StaticResource BodyLabel}" />
 
         <Button Text="4"
-                BackgroundColor="White"
                 HeightRequest="60"
                 Margin="50,10"
                 VerticalOptions="EndAndExpand"
                 Clicked="Button_Clicked"/>
         <Button Text="5"
-                BackgroundColor="White"
                 HeightRequest="60"
                 Margin="50,10"
                 VerticalOptions="End"
                 Clicked="Button_Clicked"/>
         <Button Text="6"
-                BackgroundColor="White"
                 HeightRequest="60"
                 Margin="50,10"
                 VerticalOptions="End"
                 Clicked="Button_Clicked"/>
         <Button Text="7"
-                BackgroundColor="White"
                 HeightRequest="60"
                 Margin="50,10"
                 VerticalOptions="End"
                 Clicked="Button_Clicked"/>
         <Button Text="8"
-                BackgroundColor="White"
                 HeightRequest="60"
                 Margin="50,10,50,80"
                 VerticalOptions="End"

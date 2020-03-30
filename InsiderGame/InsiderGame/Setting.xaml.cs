@@ -20,40 +20,33 @@ namespace InsiderGame
         {
             InitializeComponent();
 
-            var stackLayout = Component.RedStackLayout();
+            //var fourButton = Component.WideBlackButton("4");
+            //fourButton.Margin = new Thickness(50, 10);
+            //fourButton.Clicked += Button_Clicked;
 
-            var jpLabel = Component.BodyLabel("何人で遊びますか？");
-            var enLabel = Component.BodyLabel("How many players?");
+            //var fiveButton = Component.WideBlackButton("5");
+            //fiveButton.Margin = new Thickness(50, 10);
+            //fiveButton.Clicked += Button_Clicked;
 
-            var fourButton = Component.WideBlackButton("4");
-            fourButton.Margin = new Thickness(50, 10);
-            fourButton.Clicked += Button_Clicked;
+            //var sixButton = Component.WideBlackButton("6");
+            //sixButton.Margin = new Thickness(50, 10);
+            //sixButton.Clicked += Button_Clicked;
 
-            var fiveButton = Component.WideBlackButton("5");
-            fiveButton.Margin = new Thickness(50, 10);
-            fiveButton.Clicked += Button_Clicked;
+            //var sevenButton = Component.WideBlackButton("7");
+            //sevenButton.Margin = new Thickness(50, 10);
+            //sevenButton.Clicked += Button_Clicked;
 
-            var sixButton = Component.WideBlackButton("6");
-            sixButton.Margin = new Thickness(50, 10);
-            sixButton.Clicked += Button_Clicked;
+            //var eightButton = Component.WideBlackButton("8");
+            //eightButton.Margin = new Thickness(50, 10, 50, 80);
+            //eightButton.Clicked += Button_Clicked;
 
-            var sevenButton = Component.WideBlackButton("7");
-            sevenButton.Margin = new Thickness(50, 10);
-            sevenButton.Clicked += Button_Clicked;
+            //this.Children.Add(fourButton);
+            //stackLayout.Children.Add(fiveButton);
+            //stackLayout.Children.Add(sixButton);
+            //stackLayout.Children.Add(sevenButton);
+            //stackLayout.Children.Add(eightButton);
 
-            var eightButton = Component.WideBlackButton("8");
-            eightButton.Margin = new Thickness(50, 10, 50, 80);
-            eightButton.Clicked += Button_Clicked;
-
-            stackLayout.Children.Add(jpLabel);
-            stackLayout.Children.Add(enLabel);
-            stackLayout.Children.Add(fourButton);
-            stackLayout.Children.Add(fiveButton);
-            stackLayout.Children.Add(sixButton);
-            stackLayout.Children.Add(sevenButton);
-            stackLayout.Children.Add(eightButton);
-
-            Content = stackLayout;
+            //Content = stackLayout;
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

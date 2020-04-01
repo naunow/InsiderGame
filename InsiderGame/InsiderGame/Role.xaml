@@ -5,96 +5,67 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="InsiderGame.Role">
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="./mystyle.xaml" />
+    </ContentPage.Resources>
     
-    <StackLayout BackgroundColor="#EE0000">
+    <StackLayout BackgroundColor="#000000">
 
-        <FlexLayout Direction="Column"
-                    Margin="50">
-            <Grid BackgroundColor="Black">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30" />
-                    <RowDefinition Height="30" />
-                </Grid.RowDefinitions>
-                <Label Text="〇〇の役職は・・・"
-                   TextColor="White"
-                       BackgroundColor="#EE0000"
-                       Margin="1"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                       Grid.Row="0"
-                   x:Name="masterJapaneseLabel"/>
-                <Label Text="〇〇's role is ..."
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                       Grid.Row="1"
-                   x:Name="masterEnglishLabel"/>
-            </Grid>
+        <Label Style="{StaticResource BodyWhiteLabel}"
+               Margin="0,90,0,20"
+               x:Name="masterJapaneseLabel"/>
+        <Label Style="{StaticResource BodyWhiteLabel}"
+               Margin="0,0,0,80"
+               x:Name="masterEnglishLabel"/>
 
-        </FlexLayout>
-        
-            <Button Text="タッチして役職を確認"
-                    VerticalOptions="StartAndExpand"
-                    Margin="44, 0"
-                    HeightRequest="200"
-                    Clicked="CheckRole"
-                    x:Name="checkRoleButton"/>
 
-        <FlexLayout BackgroundColor="Black"                    
-                    Direction="Column"
-                    Margin="10,0"
-                    Padding="50"
-                    x:Name="roleFlexLayout" IsVisible="False">
+        <Button Style="{StaticResource RoleButton}"
+                VerticalOptions="StartAndExpand"
+                Clicked="CheckRole"
+                x:Name="checkRoleButton"
+                IsVisible="True">
+            <Button.Text>
+                タッチして役職を確認
+TOUCH TO CHECK YOUR ROLE
+            </Button.Text>
+        </Button>
+
+        <StackLayout BackgroundColor="Black"                    
+                     x:Name="roleFlexLayout" 
+                     IsVisible="False">
             
-            <Grid>
-                <Image x:Name="roleName"
-                   IsVisible="True" 
-                   IsOpaque="True" 
-                   Opacity="0.3" 
-                   HeightRequest="150"
-                   Aspect="AspectFit" />
+            <Label Text="COMMON"
+                   Style="{StaticResource TitleLabel}"
+               TextColor="White"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               x:Name="roleLabel" />
+            
+            <Image x:Name="roleName"
+               IsOpaque="True" 
+               HeightRequest="150"
+               Aspect="AspectFit" />
 
-                <Label Text="COMMON"
+            <Label Text="火力発電所"
+                   Style="{StaticResource WordLabel}"
                    TextColor="White"
-                   FontSize="24"
-                   FontAttributes="Bold"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   x:Name="roleLabel" />
-            </Grid>
-
-            <Grid BackgroundColor="Black"
-                  x:Name="wordGrid">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30" />
-                    <RowDefinition Height="30" />
-                </Grid.RowDefinitions>
-            <Label Text="お題は〇〇です"
-                   TextColor="Black"
-                   BackgroundColor="White"
-                   FontSize="Small"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   Grid.Row="0"
                    x:Name="wordInJapanese" />
-            <Label Text="The word is 〇〇"
-                   TextColor="black"
-                   BackgroundColor="White"
-                   FontSize="Small"
-                   VerticalTextAlignment="Center"
-                   HorizontalTextAlignment="Center"
-                   Grid.Row="1"
+            <Label Text="THERMAL POWER PLANT"
+                   Style="{StaticResource WordLabel}"
                    x:Name="wordInEnglish" />
-            </Grid>
 
-        </FlexLayout>
-        
-            <Button Text="次のプレイヤーへ"
-                    Margin="10,50"
-                    HeightRequest="72"
-                    IsVisible="False"
-                    VerticalOptions="EndAndExpand"
-                    x:Name="nextPlayerButton"
-                    Clicked="NextPlayer"/>
+        </StackLayout>
+
+        <Button Style="{StaticResource wideWhiteButton}"
+                Margin="0,0,0,80"
+                IsVisible="True"
+                x:Name="nextPlayerButton"
+                Clicked="NextPlayer">
+            <Button.Text>
+                次のプレイヤーへ
+NEXT PLAYER
+            </Button.Text>
+        </Button>
     </StackLayout>
 </ContentPage>

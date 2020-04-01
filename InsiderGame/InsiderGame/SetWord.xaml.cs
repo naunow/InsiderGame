@@ -18,12 +18,20 @@ namespace InsiderGame
         public SetWord(GameSet gameSet)
         {
             InitializeComponent();
+            var resource = new ResourceDictionary();
+
+            //var navigationStyle = new Style(typeof(NavigationPage));
+            //var barTextColorSetter = new Setter { Property = NavigationPage.BarTextColorProperty, Value = Color.Green };
+            //var barBackgroundColorSetter = new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = Color.Red };
+            //navigationStyle.Setters.Add(barTextColorSetter);
+            //navigationStyle.Setters.Add(barBackgroundColorSetter);
+            //resource.Add(navigationStyle);
 
             _gameSet.playerList = gameSet.playerList;
 
             var masterName = _gameSet.playerList.Where(x => x.Role == "Master").Select(x=>x.Name).FirstOrDefault();
             this.masterJapaneseLabel.Text = $"マスターは {masterName} です！";
-            this.masterEnglishLabel.Text = $"Master is {masterName} !";
+            this.masterEnglishLabel.Text = $"MASTER IS {masterName} !";
 
             GetWord();
         }
@@ -64,6 +72,13 @@ namespace InsiderGame
         {
             Navigation.InsertPageBefore(new Role(_gameSet, _word), this);
             await Navigation.PopAsync();
+        }
+
+        private void ChooseWord_Button(object sender, EventArgs e)
+        {
+            this.ChooseWordButton.IsVisible = false;
+            this.WordPanel.IsVisible = true;
+            this.ButtonsGrid.IsVisible = true;
         }
     }
 }

@@ -5,30 +5,34 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="InsiderGame.DebateTime">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="./mystyle.xaml" />
+    </ContentPage.Resources>
+    
     <StackLayout BackgroundColor="#EE0000"
-                 Padding="50"
                  x:Name="countDown">
 
-        <Grid BackgroundColor="Black">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-            </Grid.RowDefinitions>
+        <Label Text="THE WORD IS" 
+               Style="{StaticResource BodyLabel}"
+               Margin="0,90,0,0"/>
+
+        <Label Text="火力発電所"
+               Style="{StaticResource BodyLabel}"
+               FontSize="18"
+               />
+
+        <Label Text="THERMAL POWER PLANT"
+               Style="{StaticResource BodyLabel}"
+               FontSize="18"
+               Margin="0,0,0,80"
+               />
+
         <Label Text="インサイダーは誰なのか話し合おう"
-               TextColor="White"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
-               Grid.Row="0"
-               BackgroundColor="#EE0000"
-               Margin="1"
+               Style="{StaticResource BodyLabel}"
                />
-        <Label Text="Find the insider."
-               TextColor="White"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
-               Grid.Row="1"
+        <Label Text="FIND THE INSIDER"
+               Style="{StaticResource BodyLabel}"
                />
-        </Grid>
 
 
         <Grid Margin="50">
@@ -42,36 +46,35 @@
             </Grid.ColumnDefinitions>
 
             <Label Text="00"
+                   Style="{StaticResource TimerLabel}"
                    HorizontalOptions="End"
-                   TextColor="White"
-                   FontSize="40"
-                   FontAttributes="Bold"
                    x:Name="Minutes"
                    Grid.Row="0" Grid.Column="0"
                    
                />
 
             <Label Text=":"
-                   FontAttributes="Bold"
+                   Style="{StaticResource TimerLabel}"
                    HorizontalOptions="Center"
-                   TextColor="White"
-                   FontSize="40"
                    Grid.Row="0" Grid.Column="1"
                />
             <Label Text="00"
-                   FontAttributes="Bold"
+                   Style="{StaticResource TimerLabel}"
                    HorizontalOptions="Start"
-                   TextColor="White"
-                   FontSize="40"
                    x:Name="Seconds"
                    Grid.Row="0" Grid.Column="2"
                />
         </Grid>
 
-        <Button Text="結果を見る"
-                HeightRequest="72"
+        <Button Style="{StaticResource wideBlackButton}"
+                Margin="0,0,0,80"
                 VerticalOptions="EndAndExpand"
-                Clicked="Button_Clicked"/>
+                Clicked="Button_Clicked">
+            <Button.Text>
+                結果を見る
+GO TO RESULT
+            </Button.Text>
+        </Button>
 
     </StackLayout>
 </ContentPage>

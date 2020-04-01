@@ -1,5 +1,5 @@
 # Insider Game
-This is an "Insider game" application written by Xamarin.
+This is an "Insider game" application written in Xamarin.
 
 ![](https://oinkgms.com/images/insider/image02.png)
 ![](https://35sf8z1suehb4fodtv2gzxhu-wpengine.netdna-ssl.com/wp-content/uploads/2019/10/Insider-Board-Game-Review.jpg)
@@ -8,10 +8,4 @@ This is an "Insider game" application written by Xamarin.
 ---
 # Reference
 
-|           |  SMALL    |  MIDIUM   |  LARGE    | 
-| --------- | --------- | --------- | --------- |
-|  Button   | 42 pixels | 60 pixels | 72 pixels |
-|  TD       |  TD       |  TD       |  TD       |
-
-
-
+[figmaデザイン](https://www.figma.com/file/6254WjqfNErt6GFT0603Ew/Q-Play-Website?node-id=165%3A434)

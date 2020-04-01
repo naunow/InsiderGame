@@ -16,23 +16,22 @@
 
     <StackLayout BackgroundColor="#EE0000">
         <Image HeightRequest="200"
-               x:Name="InsiderImage"
-               
+               x:Name="InsiderImage"        
                Margin="0,120,0,0"/>
 
         <Label Text="INSIDER"
                Style="{StaticResource TitleLabel}"/>
 
         <Button Text="Set new words"
-                Margin="60,0"
+                Margin="60,0,60,36"
                 Clicked="SetWordButton_Clicked"
-                StyleClass="blackButton"
+                Style="{StaticResource wideBlackButton}"
                 />
         
         <Button Text="Play"
-                Margin="60,36,60,80"
+                Margin="60,0,60,80"
                 Clicked="PlayButton_Clicked"
-                StyleClass="blackButton"
+                Style="{StaticResource wideBlackButton}"
                 />
         
     </StackLayout>

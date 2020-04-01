@@ -7,7 +7,7 @@
 
 
     <!--ラベル-->
-
+    
     <Style x:Key="TitleLabel" TargetType="Label">
         <Setter Property="FontSize" Value="40" />
         <Setter Property="TextColor" Value="Black" />
@@ -24,17 +24,69 @@
         <Setter Property="VerticalOptions" Value="Start" />
     </Style>
 
+    <Style x:Key="BodyWhiteLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+    </Style>
+    
+    <Style x:Key="WordLabel" TargetType="Label">
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HorizontalTextAlignment" Value="Center" />
+        <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+    </Style>
 
+    <Style x:Key="TimerLabel" TargetType="Label">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="40" />
+    </Style>
 
     <!--ボタン-->
 
-    <Style TargetType="Button">
+    <Style x:Key="wideBlackButton" TargetType="Button">
         <Setter Property="BackgroundColor" Value="Black" />
         <Setter Property="TextColor" Value="White" />
         <Setter Property="CornerRadius" Value="10" />
-        <Setter Property="WidthRequest" Value="246" />
-        <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+        <Setter Property="WidthRequest" Value="260" />
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
         <Setter Property="VerticalOptions" Value="End" />
+    </Style>
+
+    <Style x:Key="wideWhiteButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="WidthRequest" Value="260" />
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
+        <Setter Property="VerticalOptions" Value="EndAndExpand" />
+    </Style>
+    
+    <Style x:Key="halfWhiteButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="HeightRequest" Value="60" />
+        <Setter Property="WidthRequest" Value="120" />
+        <Setter Property="HorizontalOptions" Value="Fill" />
+        <Setter Property="VerticalOptions" Value="End" />
+    </Style>
+
+    <Style x:Key="RoleButton" TargetType="Button">
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="BackgroundColor" Value="White" />
+        <Setter Property="CornerRadius" Value="10" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HeightRequest" Value="200" />
+        <Setter Property="Margin" Value="60,0" />
     </Style>
 </ResourceDictionary>
 

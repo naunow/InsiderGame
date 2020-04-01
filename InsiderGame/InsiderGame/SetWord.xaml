@@ -5,82 +5,69 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="InsiderGame.SetWord">
+    
+    <ContentPage.Resources>
+        <ResourceDictionary Source="./mystyle.xaml" />
+        <!--<ResourceDictionary>
+            <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="Red"/>
+            <Setter Property="BarTextColor" Value="Green"/>
+        </Style>
+        </ResourceDictionary>-->
+    </ContentPage.Resources>
+    
 
-    <StackLayout BackgroundColor="#EE0000">
+    <StackLayout BackgroundColor="#000000">
 
-        <FlexLayout Direction="Column"
-                    Margin="50">
-        <Grid BackgroundColor="Black">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="30" />
-                <RowDefinition Height="30" />
-            </Grid.RowDefinitions>
+        <StackLayout>
             
             <Label Text="マスターは〇〇です！"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   BackgroundColor="#EE0000"
-                   Margin="1"
-                   Grid.Row="0"
+                   Style="{StaticResource BodyWhiteLabel}"
+                   Margin="0,90,0,0"
                    x:Name="masterJapaneseLabel"/>
-            <Label Text="Master is 〇〇！"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   Grid.Row="1"
+
+            <Label Text="お題を選びます"
+                   Style="{StaticResource BodyWhiteLabel}"
+                   Margin="0,0,0,20"/>
+
+            <Label Text="MASTER IS 〇〇！"
+                   Style="{StaticResource BodyWhiteLabel}"
+                   Margin="0,0,0,0"
                    x:Name="masterEnglishLabel"/>
-        </Grid>
 
-            <Grid BackgroundColor="Black"
-                  Margin="0,20">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="30" />
-                    <RowDefinition Height="30" />
-                </Grid.RowDefinitions>
-                <Label Text="お題を選びます"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   Grid.Row="0"
-                       BackgroundColor="#EE0000"
-                       Margin="1"
-                   Padding="0,0,0,0"/>
+            <Label Text="CHOOSE A WORD"
+                   Style="{StaticResource BodyWhiteLabel}"
+                   Margin="0,0,0,0"/>
 
-                <Label Text="Choose a word"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
-                   Grid.Row="1"
-                   Padding="0,0,0,0"/>
+        </StackLayout>
 
-            </Grid>
-
-        </FlexLayout>
-
-        <FlexLayout BackgroundColor="Black" Direction="Column"
-                    Padding="50,30"
-                    Margin="10">
+        <StackLayout BackgroundColor="Black" 
+                    x:Name="WordPanel"
+                    IsVisible="False">
             
             <Label Text="宇宙飛行士"
-                   TextColor="White"
-                   FontSize="Large"
-                   FontAttributes="Bold"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
+                   Style="{StaticResource WordLabel}"
+                   Margin="0,80,0,0"
                    x:Name="JapaneseWord"
                 />
-            <Label Text="astronaut"
-                   TextColor="White"
-                   FontSize="Medium"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"
+            <Label Text="ASTRONAUTS"
+                   Style="{StaticResource WordLabel}"
                    x:Name="EnglishWord"
                    />
 
-        </FlexLayout>
+        </StackLayout>
         
-        <Grid VerticalOptions="EndAndExpand">
+            <Button Style="{StaticResource wideWhiteButton}"
+                    Margin="0,0,0,80"
+                    Clicked="ChooseWord_Button"
+                    x:Name="ChooseWordButton">
+                <Button.Text>
+                    お題をえらぶ
+Choose Word
+                </Button.Text>
+            </Button>
+        
+        <Grid VerticalOptions="EndAndExpand" IsVisible="False" x:Name="ButtonsGrid">
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
 
@@ -90,17 +77,27 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Text="えらぶ"
+            <Button Style="{StaticResource halfWhiteButton}"
                     Grid.Row="0" Grid.Column="0"
                     HeightRequest="60"
-                    Margin="5,80"
-                    Clicked="ChooseWord"/>
+                    Margin="30,0,0,80"
+                    Clicked="ChooseWord">
+                <Button.Text>
+                    変える
+change
+                </Button.Text>
+            </Button>
 
-            <Button Text="決定(役職確認へ)"
+            <Button Style="{StaticResource halfWhiteButton}"
                     Grid.Row="0" Grid.Column="1"
                     HeightRequest="60"
-                    Margin="5,80"
-                    Clicked="CheckRole"/>
+                    Margin="10,0,30,80"
+                    Clicked="CheckRole">
+                <Button.Text>
+                役職確認へ
+OK
+                </Button.Text>
+            </Button>
         </Grid>
               
     </StackLayout>

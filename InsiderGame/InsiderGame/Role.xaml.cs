@@ -17,6 +17,7 @@ namespace InsiderGame
         private Word _word;
 
         const string MASTER = "Master";
+        const string COMMON = "Common";
 
         public Role(GameSet gameSet, Word word)
         {
@@ -30,8 +31,8 @@ namespace InsiderGame
         {
             base.OnAppearing();
 
-            wordInJapanese.Text = $"お題は{_word.WordInJapanese}です！";
-            wordInEnglish.Text = $"The Word is {_word.WordInEnglish}!";
+            wordInJapanese.Text = _word.WordInJapanese;
+            wordInEnglish.Text = _word.WordInEnglish;
 
             // 初期表示時は非表示に設定
             this.roleFlexLayout.IsVisible = false;
@@ -45,18 +46,20 @@ namespace InsiderGame
             var playerName = _player.Name;
 
             this.masterJapaneseLabel.Text = $"{playerName}の役職は……";
-            this.masterEnglishLabel.Text = $"{playerName}'s role is ...";
+            this.masterEnglishLabel.Text = $"{playerName}'S ROLE IS ...";
             this.roleLabel.Text = _player.Role;
 
-            if (_player.Role == "Common")
+            if (_player.Role == COMMON)
             {
                 roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whitequ.png");
-                wordGrid.IsVisible = false;
+                wordInEnglish.IsVisible = false;
+                wordInJapanese.IsVisible = false;
             }
             else
             {
                 roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whiteInsiderImage.png");
-                wordGrid.IsVisible = true;
+                wordInEnglish.IsVisible = true;
+                wordInJapanese.IsVisible = true;
             }
         }
 

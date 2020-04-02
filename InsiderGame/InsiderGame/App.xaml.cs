@@ -14,6 +14,7 @@ namespace InsiderGame
 
             var nav = new NavigationPage(new MainPage());
             nav.BarBackgroundColor = Color.FromHex("EE0000");
+            //nav.Opacity = 0;
             nav.BarTextColor = Color.White;
             MainPage = nav;
 

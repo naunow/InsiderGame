@@ -21,6 +21,10 @@ namespace InsiderGame
             InitializeComponent();
             SetUp();
 
+            // ナビゲーションバーの色変更
+            var mdPage = Application.Current.MainPage as NavigationPage;
+            mdPage.BarBackgroundColor = Color.FromHex("EE0000");
+
             _gameSet = gameSet;
         }
 

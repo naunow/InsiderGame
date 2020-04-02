@@ -18,14 +18,10 @@ namespace InsiderGame
         public SetWord(GameSet gameSet)
         {
             InitializeComponent();
-            var resource = new ResourceDictionary();
 
-            //var navigationStyle = new Style(typeof(NavigationPage));
-            //var barTextColorSetter = new Setter { Property = NavigationPage.BarTextColorProperty, Value = Color.Green };
-            //var barBackgroundColorSetter = new Setter { Property = NavigationPage.BarBackgroundColorProperty, Value = Color.Red };
-            //navigationStyle.Setters.Add(barTextColorSetter);
-            //navigationStyle.Setters.Add(barBackgroundColorSetter);
-            //resource.Add(navigationStyle);
+            // ナビゲーションバーの色変更
+            var mdPage = Application.Current.MainPage as NavigationPage;
+            mdPage.BarBackgroundColor = Color.Black;
 
             _gameSet.playerList = gameSet.playerList;
 

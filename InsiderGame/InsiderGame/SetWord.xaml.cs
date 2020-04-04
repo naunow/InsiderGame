@@ -72,7 +72,7 @@ namespace InsiderGame
         private async void CheckRole(object sender, EventArgs e)
         {
             Navigation.InsertPageBefore(new Role(_gameSet, _word), this);
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(false);
         }
 
         private void ChooseWord_Button(object sender, EventArgs e)

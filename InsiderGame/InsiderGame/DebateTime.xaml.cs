@@ -54,7 +54,7 @@ namespace InsiderGame
         private async void Button_Clicked(object sender, EventArgs e)
         {
             Navigation.InsertPageBefore(new Result(_gameSet), this);
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(false);
         }
     }
 }

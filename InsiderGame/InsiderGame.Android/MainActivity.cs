@@ -20,6 +20,21 @@ namespace InsiderGame.Droid
 
             base.OnCreate(savedInstanceState);
 
+            // フルスクリーンにする
+            //if (Build.VERSION.SdkInt >= BuildVersionCodes.Lollipop)
+            //{
+            //    this.Window.AddFlags(WindowManagerFlags.Fullscreen);
+            //    this.Window.AddFlags(WindowManagerFlags.KeepScreenOn);
+            //}
+
+            //var systemUiFlags = SystemUiFlags.LayoutStable
+            //| SystemUiFlags.LayoutHideNavigation
+            //| SystemUiFlags.LayoutFullscreen
+            //| SystemUiFlags.HideNavigation
+            //| SystemUiFlags.Fullscreen
+            //| SystemUiFlags.ImmersiveSticky;
+            //Window.DecorView.SystemUiVisibility = (StatusBarVisibility)(int)systemUiFlags;
+
             // DBパスの設定
             string fileName = "insidergame_db.sqlite";
             // string fileLocation = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);

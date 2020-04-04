@@ -18,6 +18,8 @@ namespace InsiderGame
             InitializeComponent();
 
             InsiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.blackInsiderImage.png");
+
+            //Application.Current.SetValue();
         }
 
         /// <summary>
@@ -27,7 +29,7 @@ namespace InsiderGame
         /// <param name="e"></param>
         private async void PlayButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Setting());
+            await Navigation.PushAsync(new Setting(), false);
         }
 
         /// <summary>
@@ -37,7 +39,7 @@ namespace InsiderGame
         /// <param name="e"></param>
         private void SetWordButton_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new WordList());
+            Navigation.PushAsync(new WordList(), false);
         }
     }
 }

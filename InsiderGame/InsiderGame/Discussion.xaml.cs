@@ -54,7 +54,7 @@ namespace InsiderGame
         {
             isStoppedTimer = false;
             Navigation.InsertPageBefore(new DebateTime(_gameSet, _timer), this);
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(false);
         }
     }
 }

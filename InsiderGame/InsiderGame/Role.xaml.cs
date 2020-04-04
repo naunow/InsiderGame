@@ -103,7 +103,7 @@ namespace InsiderGame
                 // 全てのプレイヤーが表示されていたらゲームプレイへ
                 Navigation.InsertPageBefore(new Discussion(_gameSet), this);
             }
-            await Navigation.PopAsync();
+            await Navigation.PopAsync(false);
 
         }
     }

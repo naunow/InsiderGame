@@ -38,12 +38,12 @@ namespace InsiderGame
             var insider = _gameset.playerList.Single(x => x.Role == INSIDER);
 
             insiderName.Text = insider.Name;
-            insiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.whiteInsiderImage.png");
+            insiderImage.Source = ImageSource.FromResource("InsiderGame.Assets.blackInsiderImage.png");
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PopToRootAsync();
+            Navigation.PopToRootAsync(false);
         }
     }
 }

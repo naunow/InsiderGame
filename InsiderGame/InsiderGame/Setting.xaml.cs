@@ -42,7 +42,7 @@ namespace InsiderGame
                 playerList = SetRole(commonPlayers),
             };
 
-            await Navigation.PushAsync(new SetWord(gameSet));
+            await Navigation.PushAsync(new SetWord(gameSet), false);
         }
 
         /// <summary>

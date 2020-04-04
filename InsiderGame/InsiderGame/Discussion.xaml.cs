@@ -20,12 +20,16 @@ namespace InsiderGame
         {
             InitializeComponent();
             SetUp();
+            _gameSet = gameSet;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
             // ナビゲーションバーの色変更
             var mdPage = Application.Current.MainPage as NavigationPage;
             mdPage.BarBackgroundColor = Color.FromHex("EE0000");
-
-            _gameSet = gameSet;
         }
 
         private void SetUp()

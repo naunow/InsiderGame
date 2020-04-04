@@ -19,15 +19,15 @@ namespace InsiderGame
         public Setting()
         {
             InitializeComponent();
+        }
 
-            //var mdPage = Application.Current.MainPage as MasterDetailPage;
-            //var navPage = mdPage.Detail as NavigationPage;
-            //navPage.BarBackgroundColor = Color.Black;
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
             // ナビゲーションバーの色変更
             var mdPage = Application.Current.MainPage as NavigationPage;
             mdPage.BarBackgroundColor = Color.FromHex("EE0000");
-
         }
 
         private async void Button_Clicked(object sender, EventArgs e)

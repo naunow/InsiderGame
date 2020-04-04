@@ -26,10 +26,14 @@ namespace InsiderGame
 
             InitializeComponent();
         }
-
+        
         protected override void OnAppearing()
         {
             base.OnAppearing();
+
+            // ナビゲーションバーの色変更
+            var mdPage = Application.Current.MainPage as NavigationPage;
+            mdPage.BarBackgroundColor = Color.Black;
 
             wordInJapanese.Text = _word.WordInJapanese;
             wordInEnglish.Text = _word.WordInEnglish;

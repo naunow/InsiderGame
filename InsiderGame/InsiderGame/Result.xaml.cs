@@ -24,6 +24,15 @@ namespace InsiderGame
             SetUp();
         }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // ナビゲーションバーの色変更
+            var mdPage = Application.Current.MainPage as NavigationPage;
+            mdPage.BarBackgroundColor = Color.FromHex("EE0000");
+        }
+
         private void SetUp()
         {
             var insider = _gameset.playerList.Single(x => x.Role == INSIDER);

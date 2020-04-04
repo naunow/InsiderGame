@@ -19,10 +19,6 @@ namespace InsiderGame
         {
             InitializeComponent();
 
-            // ナビゲーションバーの色変更
-            var mdPage = Application.Current.MainPage as NavigationPage;
-            mdPage.BarBackgroundColor = Color.Black;
-
             _gameSet.playerList = gameSet.playerList;
 
             var masterName = _gameSet.playerList.Where(x => x.Role == "Master").Select(x=>x.Name).FirstOrDefault();
@@ -30,6 +26,15 @@ namespace InsiderGame
             this.masterEnglishLabel.Text = $"MASTER IS {masterName} !";
 
             GetWord();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // ナビゲーションバーの色変更
+            var mdPage = Application.Current.MainPage as NavigationPage;
+            mdPage.BarBackgroundColor = Color.Black;
         }
 
         /// <summary>

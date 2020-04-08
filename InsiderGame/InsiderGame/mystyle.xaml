@@ -12,22 +12,25 @@
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="StartAndExpand" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Bold.ttf#MPLUSRounded1c-Bold" />
     </Style>
     
     <Style x:Key="BodyLabel" TargetType="Label">
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="15" />
         <Setter Property="TextColor" Value="Black" />
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="Start" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Bold.ttf#MPLUSRounded1c-Bold" />
     </Style>
 
     <Style x:Key="BodyWhiteLabel" TargetType="Label">
-        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontSize" Value="15" />
         <Setter Property="TextColor" Value="White" />
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HorizontalOptions" Value="Center" />
         <Setter Property="VerticalOptions" Value="Center" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Bold.ttf#MPLUSRounded1c-Bold" />
     </Style>
     
     <Style x:Key="WordLabel" TargetType="Label">
@@ -39,12 +42,13 @@
         <Setter Property="VerticalOptions" Value="Center" />
         <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
         <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Bold.ttf#MPLUSRounded1c-Bold" />
     </Style>
 
     <Style x:Key="TimerLabel" TargetType="Label">
         <Setter Property="TextColor" Value="Black" />
-        <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="FontSize" Value="40" />
+        <Setter Property="FontFamily" Value="SecularOne-Regular.ttf#SecularOne-Regular" />
     </Style>
 
     <!--ボタン-->
@@ -56,6 +60,7 @@
         <Setter Property="WidthRequest" Value="260" />
         <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
         <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Medium.ttf#MPLUSRounded1c-Medium" />
     </Style>
 
     <Style x:Key="wideWhiteButton" TargetType="Button">
@@ -65,6 +70,7 @@
         <Setter Property="WidthRequest" Value="260" />
         <Setter Property="HorizontalOptions" Value="CenterAndExpand" />
         <Setter Property="VerticalOptions" Value="EndAndExpand" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Medium.ttf#MPLUSRounded1c-Medium" />
     </Style>
     
     <Style x:Key="halfWhiteButton" TargetType="Button">
@@ -75,6 +81,7 @@
         <Setter Property="WidthRequest" Value="120" />
         <Setter Property="HorizontalOptions" Value="Fill" />
         <Setter Property="VerticalOptions" Value="End" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Medium.ttf#MPLUSRounded1c-Medium" />
     </Style>
 
     <Style x:Key="RoleButton" TargetType="Button">
@@ -85,6 +92,7 @@
         <Setter Property="FontAttributes" Value="Bold" />
         <Setter Property="HeightRequest" Value="200" />
         <Setter Property="Margin" Value="60,0" />
+        <Setter Property="FontFamily" Value="MPLUSRounded1c-Bold.ttf#MPLUSRounded1c-Bold" />
     </Style>
 </ResourceDictionary>
 

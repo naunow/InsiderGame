@@ -30,27 +30,21 @@
             </Grid.ColumnDefinitions>
 
             <Label Text="05"
+                   Style="{StaticResource TimerLabel}"
                    HorizontalOptions="End"
-                   TextColor="Black"
-                   FontSize="40"
-                   FontAttributes="Bold"
                    x:Name="Minutes"
                    Grid.Row="0" Grid.Column="0"
                    
                />
 
             <Label Text=":"
-                   FontAttributes="Bold"
+                   Style="{StaticResource TimerLabel}"
                    HorizontalOptions="Center"
-                   TextColor="Black"
-                   FontSize="40"
                    Grid.Row="0" Grid.Column="1"
                />
             <Label Text="00"
-                   FontAttributes="Bold"
+                   Style="{StaticResource TimerLabel}"
                    HorizontalOptions="Start"
-                   TextColor="Black"
-                   FontSize="40"
                    x:Name="Seconds"
                    Grid.Row="0" Grid.Column="2"
                />

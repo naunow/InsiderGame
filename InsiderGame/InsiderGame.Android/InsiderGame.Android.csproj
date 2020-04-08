@@ -73,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Assets\initialWordData.json" />
+    <AndroidAsset Include="Assets\MPLUSRounded1c-Medium.ttf" />
+    <AndroidAsset Include="Assets\MPLUSRounded1c-Bold.ttf" />
+    <AndroidAsset Include="Assets\SecularOne-Regular.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

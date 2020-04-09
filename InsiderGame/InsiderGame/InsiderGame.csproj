@@ -14,6 +14,7 @@
     <None Remove="Assets\blackex.png" />
     <None Remove="Assets\blackInsiderImage.png" />
     <None Remove="Assets\blackqu.png" />
+    <None Remove="Assets\coloredInsiderImage.svg" />
     <None Remove="Assets\initialWordData.json" />
     <None Remove="Assets\LargeInsiderImage.png" />
     <None Remove="Assets\union.png" />
@@ -26,6 +27,7 @@
     <EmbeddedResource Include="Assets\blackex.png" />
     <EmbeddedResource Include="Assets\blackInsiderImage.png" />
     <EmbeddedResource Include="Assets\blackqu.png" />
+    <EmbeddedResource Include="Assets\coloredInsiderImage.svg" />
     <EmbeddedResource Include="Assets\initialWordData.json" />
     <EmbeddedResource Include="Assets\LargeInsiderImage.png" />
     <EmbeddedResource Include="Assets\union.png" />
@@ -37,6 +39,8 @@
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
     <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
   </ItemGroup>

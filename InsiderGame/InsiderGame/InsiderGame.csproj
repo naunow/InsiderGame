@@ -11,29 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\blackex.png" />
-    <None Remove="Assets\blackInsiderImage.png" />
-    <None Remove="Assets\blackqu.png" />
     <None Remove="Assets\coloredInsiderImage.svg" />
     <None Remove="Assets\initialWordData.json" />
-    <None Remove="Assets\LargeInsiderImage.png" />
-    <None Remove="Assets\union.png" />
-    <None Remove="Assets\whiteex.png" />
-    <None Remove="Assets\whiteInsiderImage.png" />
-    <None Remove="Assets\whitequ.png" />
+    <None Remove="Assets\whiteInsiderImage.svg" />
+    <None Remove="Assets\whitequ.svg" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Assets\blackex.png" />
-    <EmbeddedResource Include="Assets\blackInsiderImage.png" />
-    <EmbeddedResource Include="Assets\blackqu.png" />
     <EmbeddedResource Include="Assets\coloredInsiderImage.svg" />
     <EmbeddedResource Include="Assets\initialWordData.json" />
-    <EmbeddedResource Include="Assets\LargeInsiderImage.png" />
-    <EmbeddedResource Include="Assets\union.png" />
-    <EmbeddedResource Include="Assets\whiteex.png" />
-    <EmbeddedResource Include="Assets\whiteInsiderImage.png" />
-    <EmbeddedResource Include="Assets\whitequ.png" />
+    <EmbeddedResource Include="Assets\whiteInsiderImage.svg" />
+    <EmbeddedResource Include="Assets\whitequ.svg" />
   </ItemGroup>
 
   <ItemGroup>

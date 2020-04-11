@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              mc:Ignorable="d"
              x:Class="InsiderGame.Result">
     <ContentPage.Resources>
@@ -18,10 +20,16 @@
                Style="{StaticResource BodyLabel}"
                />
 
-        <Image x:Name="insiderImage"
+        <ffSvg:SvgCachedImage x:Name="insiderImage"
+                              Source="resource://InsiderGame.Assets.coloredInsiderImage.svg" 
+                              VerticalOptions="CenterAndExpand"
+                              HeightRequest="150"
+                              Aspect="AspectFit" />
+
+        <!--<Image x:Name="insiderImage"
                VerticalOptions="CenterAndExpand"
                HeightRequest="150"
-               Aspect="AspectFit" />
+               Aspect="AspectFit" />-->
 
         <Label Text="PLAYER〇〇"
                Style="{StaticResource TitleLabel}"

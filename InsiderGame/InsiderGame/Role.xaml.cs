@@ -55,13 +55,13 @@ namespace InsiderGame
 
             if (_player.Role == COMMON)
             {
-                roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whitequ.png");
+                roleName.Source = "resource://InsiderGame.Assets.whitequ.svg";
                 wordInEnglish.IsVisible = false;
                 wordInJapanese.IsVisible = false;
             }
             else
             {
-                roleName.Source = ImageSource.FromResource("InsiderGame.Assets.whiteInsiderImage.png");
+                roleName.Source = "resource://InsiderGame.Assets.whiteInsiderImage.svg";
                 wordInEnglish.IsVisible = true;
                 wordInJapanese.IsVisible = true;
             }

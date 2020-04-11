@@ -43,11 +43,10 @@ TOUCH TO CHECK YOUR ROLE
                VerticalTextAlignment="Center"
                HorizontalTextAlignment="Center"
                x:Name="roleLabel" />
-            
-            <Image x:Name="roleName"
-               IsOpaque="True" 
-               HeightRequest="150"
-               Aspect="AspectFit" />
+
+            <ffSvg:SvgCachedImage x:Name="roleName"
+                                  HeightRequest="150"
+                                  Aspect="AspectFit" />
 
             <Label Text="火力発電所"
                    Style="{StaticResource WordLabel}"

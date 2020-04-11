@@ -101,7 +101,7 @@ namespace InsiderGame
             else
             {
                 // 全てのプレイヤーが表示されていたらゲームプレイへ
-                Navigation.InsertPageBefore(new Discussion(_gameSet), this);
+                Navigation.InsertPageBefore(new Discussion(_gameSet, _word), this);
             }
             await Navigation.PopAsync(false);
 

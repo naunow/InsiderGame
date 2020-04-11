@@ -14,13 +14,15 @@ namespace InsiderGame
     {
         private GameSet _gameSet;
         private Timer _timer;
+        private Word _word;
 
-        public DebateTime(GameSet gameset, Timer timer)
+        public DebateTime(GameSet gameset, Timer timer, Word word)
         {
             InitializeComponent();
 
             _gameSet = gameset;
             _timer = timer;
+            _word = word;
 
             _timer.TimeSpan = (new TimeSpan(0, 5, 0) - _timer.TimeSpan);
             this.Seconds.Text = (Convert.ToInt32(_timer.Seconds) - 1).ToString("00");
@@ -35,6 +37,10 @@ namespace InsiderGame
             // ナビゲーションバーの色変更
             var mdPage = Application.Current.MainPage as NavigationPage;
             mdPage.BarBackgroundColor = Color.FromHex("EE0000");
+
+            // お題の表示
+            wordInJapanese.Text = _word.WordInJapanese;
+            wordInEnglish.Text = _word.WordInEnglish;
         }
 
         private void SetUp()

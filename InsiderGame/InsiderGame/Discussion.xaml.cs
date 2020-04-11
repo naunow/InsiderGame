@@ -13,14 +13,16 @@ namespace InsiderGame
     public partial class Discussion : ContentPage
     {
         private GameSet _gameSet;
+        private Word _word;
         private Timer _timer;
         private bool isStoppedTimer = true;
 
-        public Discussion(GameSet gameSet)
+        public Discussion(GameSet gameSet, Word word)
         {
             InitializeComponent();
             SetUp();
             _gameSet = gameSet;
+            _word = word;
         }
 
         protected override void OnAppearing()
@@ -53,7 +55,7 @@ namespace InsiderGame
         private async void Button_Clicked(object sender, EventArgs e)
         {
             isStoppedTimer = false;
-            Navigation.InsertPageBefore(new DebateTime(_gameSet, _timer), this);
+            Navigation.InsertPageBefore(new DebateTime(_gameSet, _timer, _word), this);
             await Navigation.PopAsync(false);
         }
     }

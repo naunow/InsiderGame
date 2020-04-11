@@ -36,24 +36,21 @@ TOUCH TO CHECK YOUR ROLE
         <StackLayout BackgroundColor="Black"                    
                      x:Name="roleFlexLayout" 
                      IsVisible="False">
-            
-            <Label Text="COMMON"
-                   Style="{StaticResource TitleLabel}"
-               TextColor="White"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
-               x:Name="roleLabel" />
+
+            <Label Style="{StaticResource TitleLabel}"
+                   TextColor="White"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   x:Name="roleLabel" />
 
             <ffSvg:SvgCachedImage x:Name="roleName"
                                   HeightRequest="150"
                                   Aspect="AspectFit" />
 
-            <Label Text="火力発電所"
-                   Style="{StaticResource WordLabel}"
+            <Label Style="{StaticResource WordLabel}"
                    TextColor="White"
                    x:Name="wordInJapanese" />
-            <Label Text="THERMAL POWER PLANT"
-                   Style="{StaticResource WordLabel}"
+            <Label Style="{StaticResource WordLabel}"
                    x:Name="wordInEnglish" />
 
         </StackLayout>

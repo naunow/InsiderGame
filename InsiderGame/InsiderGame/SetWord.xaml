@@ -21,8 +21,7 @@
 
         <StackLayout>
             
-            <Label Text="マスターは〇〇です！"
-                   Style="{StaticResource BodyWhiteLabel}"
+            <Label Style="{StaticResource BodyWhiteLabel}"
                    Margin="0,90,0,0"
                    x:Name="masterJapaneseLabel"/>
 
@@ -30,8 +29,7 @@
                    Style="{StaticResource BodyWhiteLabel}"
                    Margin="0,0,0,20"/>
 
-            <Label Text="MASTER IS 〇〇！"
-                   Style="{StaticResource BodyWhiteLabel}"
+            <Label Style="{StaticResource BodyWhiteLabel}"
                    Margin="0,0,0,0"
                    x:Name="masterEnglishLabel"/>
 
@@ -45,13 +43,11 @@
                     x:Name="WordPanel"
                     IsVisible="False">
             
-            <Label Text="宇宙飛行士"
-                   Style="{StaticResource WordLabel}"
+            <Label Style="{StaticResource WordLabel}"
                    Margin="0,80,0,0"
                    x:Name="JapaneseWord"
                 />
-            <Label Text="ASTRONAUTS"
-                   Style="{StaticResource WordLabel}"
+            <Label Style="{StaticResource WordLabel}"
                    x:Name="EnglishWord"
                    />
 

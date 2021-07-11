@@ -41,5 +41,15 @@ namespace InsiderGame
         {
             Navigation.PushAsync(new WordList(), false);
         }
+
+        /// <summary>
+        /// 免責事項ページへ
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Disclaim_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

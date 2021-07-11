@@ -17,6 +17,15 @@
     </ContentPage.ToolbarItems>
 
     <StackLayout BackgroundColor="#EE0000">
+        <!--<Button Text="?"
+                FontFamily="MPLUSRounded1c-Bold.ttf#MPLUSRounded1c-Bold"
+                Clicked="Disclaim_Clicked"
+                HorizontalOptions="End"
+                Margin="0,20,20,0"
+                TextColor="White"
+                BackgroundColor="Black"
+                WidthRequest="50"
+                CornerRadius="25" />-->
 
         <ffSvg:SvgCachedImage Source="resource://InsiderGame.Assets.coloredInsiderImage.svg"
                               HeightRequest="200"
@@ -26,6 +35,9 @@
         <Label Text="INSIDER"
                Style="{StaticResource TitleLabel}"/>
 
+        <Label Text="By Ami Yoshida"
+               Style="{StaticResource BodyLabel}" />
+        
         <Button Text="Set new words"
                 Margin="60,0,60,36"
                 Clicked="SetWordButton_Clicked"
